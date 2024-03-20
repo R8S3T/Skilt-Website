@@ -1,0 +1,25 @@
+@keyframes scroll {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 5)); /* Adjust the calc value based on the number of images and their width */
+    }
+}
+
+.demo-scrolling {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Adjust the timing as needed */
+}
+
+.demo-scrolling img {
+    height: 100%; /* Or set a specific height */
+    width: auto; /* This will maintain the aspect ratio */
+}
+
+  /* Responsive Design: You might want to pause or change the animation on smaller screens */
+@media (max-width: 768px) {
+    .demo-scrolling {
+      animation-play-state: paused; /* Pauses the animation */
+    }
+}

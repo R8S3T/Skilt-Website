@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header.tsx';
-import Landing from './Landing.tsx';
-import DemoSection from './DemoSection.tsx';
-import Footer from './Footer.tsx';
+import Header from './components/Header.tsx';
+import Landing from './components/Landing.tsx';
+import DemoSection from './components/DemoSection.tsx';
+import Footer from './components/Footer.tsx';
 
 const App: React.FC = () => {
   return (
