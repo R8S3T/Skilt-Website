@@ -2,7 +2,7 @@ import React from 'react';
 
 const Landing: React.FC = () => {
     return (
-        <main className="flex flex-col justify-center items-center h-screen bg-cover bg-center" style={{ backgroundImage: "url('images/background.png')" }}>
+        <main className="flex flex-col justify-center items-center h-screen bg-cover bg-center bg-my-mud" style={{ backgroundImage: "url('images/background.png')" }}>
         <h2 className="text-6xl text-blue-900 text-center font-bold mb-4">
             Lernen im Handwerk <br /> 
             neu definiert

@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                 </ul>
             </nav>
             <div>
-                <p>&copy; {new Date().getFullYear()} Skilt App. All rights reserved.</p>
+                <p>&copy; Skilt App {new Date().getFullYear()}</p>
             </div>
         </footer>
     );
