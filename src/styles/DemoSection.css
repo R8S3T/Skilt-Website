@@ -1,25 +1,50 @@
+.slide-container {
+  position: relative;
+  z-index: 2;
+}
+
+.demo-slides-container {
+  overflow: hidden;
+  position: relative;
+  max-width: 4xl;
+  height: auto;
+  margin-top: 100px;
+}
+
+.demo-slides {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.demo-slides img {
+  max-height: 550px;
+  max-width: 300px;
+  margin: 0 15px;
+}
+
 @keyframes scroll {
     0% {
     transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 5)); /* Adjust the calc value based on the number of images and their width */
+      transform: translateX(calc(-250px * 5));
     }
 }
 
 .demo-scrolling {
-    display: flex;
-    animation: scroll 30s linear infinite; /* Adjust the timing as needed */
+  display: flex;
+  animation: scroll 30s linear infinite;
+  position: relative;
+  z-index: 20;
 }
 
 .demo-scrolling img {
-    height: 550px; /* Or set a specific height */
-    width: 300px; /* This will maintain the aspect ratio */
+    height: 550px;
+    width: 300px;
 }
 
-  /* Responsive Design: You might want to pause or change the animation on smaller screens */
 @media (max-width: 768px) {
     .demo-scrolling {
-      animation-play-state: paused; /* Pauses the animation */
+      animation-play-state: paused;
     }
 }
