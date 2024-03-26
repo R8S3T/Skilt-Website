@@ -2,8 +2,12 @@ import React from 'react';
 import '../styles/DemoSection.css';
 
 const DemoSection: React.FC = () => {
+    const backgroundImageStyle = {
+        backgroundImage: `url('/images/background3.png')`
+    };
+
     return (
-        <section className="demo-section" style={{ backgroundImage: "url('/images/background3.png')"}}>
+        <section className="demo-section" style={backgroundImageStyle}>
 
             <div className="slide-container">
                 <h3 className="demo-title">App Prototype Demo</h3>

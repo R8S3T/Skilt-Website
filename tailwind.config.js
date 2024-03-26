@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'my-blue': '#1c4c74',
         'my-mud': '#dbd8e3',
+        'my-heading': '#132743',
       },
     },
   },
