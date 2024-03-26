@@ -4,7 +4,7 @@ const Landing: React.FC = () => {
     return (
         <main className="flex flex-col justify-center items-center h-screen bg-cover bg-center" 
             style={{ 
-                backgroundImage: "url('images/background.png')", 
+                backgroundImage: "url('images/background6.png')", 
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center bottom'
             }}>

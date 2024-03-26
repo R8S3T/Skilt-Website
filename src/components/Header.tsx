@@ -9,13 +9,13 @@ const Header: React.FC = () => {
             <nav>
                 <ul className="flex">
                 <li className="mr-6">
-                    <a className="text-blue-200 hover:text-blue-100" href="#features">Features</a>
+                    <a className="text-blue-200 hover:text-blue-100" href="#features">Funktionen</a>
                 </li>
                 <li className="mr-6">
-                    <a className="text-blue-200 hover:text-blue-100" href="#about">About</a>
+                    <a className="text-blue-200 hover:text-blue-100" href="#about">Über Skilt</a>
                 </li>
                 <li className="mr-6">
-                    <a className="text-blue-200 hover:text-blue-100" href="#contact">Contact</a>
+                    <a className="text-blue-200 hover:text-blue-100" href="#contact">Kontakt</a>
                 </li>
                 </ul>
             </nav>

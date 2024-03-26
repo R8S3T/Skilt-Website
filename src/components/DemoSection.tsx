@@ -19,6 +19,11 @@ const DemoSection: React.FC = () => {
                         <img src="../images/Slide3.png" alt="Demo Screen 1" className="slide" />
                         <img src="../images/Slide4.png" alt="Demo Screen 1" className="slide" />
                         <img src="../images/Slide5.png" alt="Demo Screen 1" className="slide" />
+                        <img src="../images/Slide1.png" alt="Demo Screen 1" className="slide" />
+                        <img src="../images/Slide2.png" alt="Demo Screen 1" className="slide" />
+                        <img src="../images/Slide3.png" alt="Demo Screen 1" className="slide" />
+                        <img src="../images/Slide4.png" alt="Demo Screen 1" className="slide" />
+                        <img src="../images/Slide5.png" alt="Demo Screen 1" className="slide" />
                     </div>
                 </div>
             </div>

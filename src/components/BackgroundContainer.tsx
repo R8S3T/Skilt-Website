@@ -7,7 +7,7 @@ type BackgroundContainerProps = {
 const BackgroundContainer: React.FC<BackgroundContainerProps> = ({ children }) => {
     return (
         <div className="background-container" style={{
-            backgroundImage: `linear-gradient(to bottom, #dbd8e3 85%, #F8F8F8 85%)`
+            backgroundImage: `linear-gradient(to bottom, #dbd8e3 75%, #F8F8F8 75%)`
         }}>
             {children}
         </div>
