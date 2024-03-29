@@ -43,17 +43,29 @@
   }
 }
 
+/* For smaller screens */
 @media (max-width: 768px) {
-  .demo-slides, .demo-scrolling {
-    animation-play-state: paused;
+  .demo-section {
+    min-height: auto; /* Allow the section to shrink */
   }
 
   .slide-container {
-    min-height: auto; /* Allow container to adjust based on content */
+    min-height: auto; /* Adjust based on content */
   }
 
   .demo-slides-container {
-    margin-top: 150px; /* Adjusted for smaller screens */
+    margin-top: 50px; /* Reduce the top margin */
+  }
+
+  .demo-slides img {
+    max-width: 80%; /* Larger visible area for each slide */
+    margin: 0 auto; /* Center slides */
+    display: block; /* Stack slides vertically */
+  }
+
+  /* Pause or slow down the animation */
+  .demo-slides, .demo-scrolling {
+    animation-play-state: paused;
   }
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/BackgroundContainer.css';
 
 type BackgroundContainerProps = {
     children: React.ReactNode;

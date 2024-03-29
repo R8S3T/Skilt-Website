@@ -1,8 +1,90 @@
 .landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full height */
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  background-size: cover;
+  animation: slideBackground 3s ease-out forwards;
+}
+
+/* Larger screen styles can remain unchanged if they don't conflict with inline styles */
+.landing h2 {
+  font-size: 4rem; /* Large screens */
+  margin-bottom: 1rem;
+}
+
+.landing p {
+  font-size: 1.25rem; /* Large screens */
+}
+
+/* Adjust the following media query for smaller screens */
+@media (max-width: 768px) {
+  /* Removed background-image setting since it's now in the .tsx file */
+
+  .landing h2 {
+      font-size: 2rem;
+      text-align: center; 
+  }
+
+  .landing p {
+      font-size: 1rem; /* Smaller paragraph text for mobile */
+      text-align: center;
+  }
+
+  .landing button {
+      padding: 0.8rem 1.6rem; /* Adjusted padding for the button on mobile */
+      font-size: 0.9rem; /* Adjusted font size for button text on mobile */
+  }
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  background-size: cover;
+  animation: slideBackground 3s ease-out forwards;
+}
+
+/* Larger screen styles can remain unchanged if they don't conflict with inline styles */
+.landing h2 {
+  font-size: 4rem; /* Large screens */
+  margin-bottom: 1rem;
+}
+
+.landing p {
+  font-size: 1.25rem; /* Large screens */
+}
+
+/* Adjust the following media query for smaller screens */
+@media (max-width: 768px) {
+  /* Removed background-image setting since it's now in the .tsx file */
+
+  .landing h2 {
+      font-size: 2rem;
+      text-align: center; 
+  }
+
+  .landing p {
+      font-size: 1rem; /* Smaller paragraph text for mobile */
+      text-align: center;
+  }
+
+  .landing button {
+      padding: 0.8rem 1.6rem; /* Adjusted padding for the button on mobile */
+      font-size: 0.9rem; /* Adjusted font size for button text on mobile */
+  }
+}
+
+@keyframes slideBackground {
+  0% {
+    transform: scale(1.002); /* Very slightly zoomed in */
+    background-position-y: 0%; /* Start the background at the top */
+  }
+  100% {
+    transform: scale(1); /* End at normal scale */
+    background-position-y: 20%; /* Very slight slide down */
+  }
 }
