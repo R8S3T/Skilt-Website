@@ -2,18 +2,12 @@ import React from 'react';
 import '../styles/DemoSection.css';
 
 const DemoSection: React.FC = () => {
-    const backgroundImageStyle = {
-        backgroundImage: `url('/images/background3.png')`
-    };
 
     return (
-        <section className="demo-section" style={backgroundImageStyle}>
-
+        <section className="demo-section">
             <div className="slide-container">
-                <h3 className="demo-title">App Prototype Demo</h3>
                 <div className="demo-slides-container">
                     <div className="demo-slides">
-                        {/* Your slides */}
                         <img src="../images/Slide1.png" alt="Demo Screen 1" className="slide" />
                         <img src="../images/Slide2.png" alt="Demo Screen 1" className="slide" />
                         <img src="../images/Slide3.png" alt="Demo Screen 1" className="slide" />

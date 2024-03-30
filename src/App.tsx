@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './components/Header.tsx';
 import Landing from './components/Landing.tsx';
 import DemoSection from './components/DemoSection.tsx';
+import AboutSection from './components/AboutSection.tsx';
+import ContactSection from './components/ContactSection.tsx';
 import Footer from './components/Footer.tsx';
 import BackgroundContainer from './components/BackgroundContainer.tsx';
 
@@ -12,6 +14,8 @@ const App: React.FC = () => {
       <BackgroundContainer>
         <Landing />
         <DemoSection />
+        <AboutSection />
+        <ContactSection />
       </BackgroundContainer>
       <Footer />
     </div>

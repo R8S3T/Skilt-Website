@@ -1,0 +1,11 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Ensure the content inside BackgroundContainer takes up available space */
+  /* You might need to adjust this if BackgroundContainer is not a direct flex child */
+  .BackgroundContainer {
+    flex: 1;
+  }

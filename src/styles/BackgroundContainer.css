@@ -1,7 +1,16 @@
-/* For smaller screens */
+.background-container {
+  background-image: linear-gradient(to bottom, #dbd8e3 75%, #F8F8F8 75%);
+
+  /* Flexbox properties to fill available space */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 768px) {
-    .background-container {
-      /* Adjust background styling as needed */
-      background-size: cover;
-    }
+  .background-container {
+    /* Adjust the gradient for mobile devices */
+    background-image: linear-gradient(to bottom, #dbd8e3 80%, #F8F8F8 80%);
   }
+}
+

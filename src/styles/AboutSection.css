@@ -1,0 +1,24 @@
+.about-section {
+    background: #f9f9f9; /* A light background color */
+    padding: 50px 0; /* Top and bottom padding */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width of the content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Padding on the sides */
+}
+
+.about-title {
+    text-align: center; /* Center the title */
+    font-size: 2.5rem; /* Large font size for the title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 30px; /* Space below the title */
+}
+
+.about-text {
+    font-size: 1rem; /* Appropriate font size for the text */
+    line-height: 1.6; /* Line height for readability */
+    color: #666; /* A slightly lighter color for the text */
+    text-align: justify; /* Justify the text for a clean look */
+}
