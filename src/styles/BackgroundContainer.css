@@ -1,5 +1,5 @@
 .background-container {
-  background-image: linear-gradient(to bottom, #dbd8e3 75%, #F8F8F8 75%);
+  background-image: linear-gradient(to bottom, #dbd8e3 45%, #F8F8F8 45%);
 
   /* Flexbox properties to fill available space */
   flex: 1;
@@ -10,7 +10,7 @@
 @media (max-width: 768px) {
   .background-container {
     /* Adjust the gradient for mobile devices */
-    background-image: linear-gradient(to bottom, #dbd8e3 80%, #F8F8F8 80%);
+    background-image: linear-gradient(to bottom, #dbd8e3 35%, #F8F8F8 35%);
   }
 }
 

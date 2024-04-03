@@ -13,9 +13,9 @@ const App: React.FC = () => {
       <Header />
       <BackgroundContainer>
         <Landing />
-        <DemoSection />
-        <AboutSection />
-        <ContactSection />
+        <div id="features"><DemoSection /></div>
+        <div id="about"><AboutSection /></div>
+        <div id="contact"><ContactSection /></div>
       </BackgroundContainer>
       <Footer />
     </div>
