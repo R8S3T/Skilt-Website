@@ -7,7 +7,6 @@ const ContactSection: React.FC = () => {
             <div className="container">
                 <h2 className="contact-title">Kontakt</h2>
                 <p className="contact-info">
-                Die Fertigstellung von Skilt ist für das Jahr 2025 geplant.
                 Wenn du mehr wissen willst oder mitmachen möchtest – ob als Einzelperson oder mit deinem Unternehmen – schreib uns einfach an:
                 </p>
                 <a href="mailto:info@skiltapp.com" className="contact-email">info@skiltapp.com</a>

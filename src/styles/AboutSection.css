@@ -1,24 +1,56 @@
 .about-section {
-    background: #f9f9f9; /* A light background color */
-    padding: 50px 0; /* Top and bottom padding */
+    display: flex; /* Use flexbox to create the columns */
+    min-height: 50vh; /* Fill the screen vertically */
+    color: #333; /* Text color */
 }
 
-.container {
-    max-width: 1200px; /* Maximum width of the content */
-    margin: 0 auto; /* Center the content */
-    padding: 0 20px; /* Padding on the sides */
+.about-column-left, .about-column-right {
+    background-color: #73d5d1; /* Replace with the color you want */
+    flex: 1; /* Take up equal space */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
 }
+
+.about-column-middle {
+    flex: 2; /* Take up double the space compared to the side columns */
+    padding: 0px 100px; /* Remove top padding, retain horizontal padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align content to start at the top */
+    max-width: 800px; /* Adjust as needed */
+}
+
 
 .about-title {
-    text-align: center; /* Center the title */
-    font-size: 2.5rem; /* Large font size for the title */
-    color: #333; /* Dark color for the title */
-    margin-bottom: 30px; /* Space below the title */
+    font-size: 3.5rem;
+    color: #333;
+    transform: rotate(-90deg); /* Rotate the title for horizontal orientation */
+    transform-origin: left; /* Set the origin of rotation */
+    white-space: nowrap; /* Ensure the title is on a single line */
 }
 
 .about-text {
-    font-size: 1rem; /* Appropriate font size for the text */
-    line-height: 1.6; /* Line height for readability */
-    color: #666; /* A slightly lighter color for the text */
-    text-align: justify; /* Justify the text for a clean look */
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 1rem;
 }
+
+/* Add responsive styles as necessary */
+@media (max-width: 768px) {
+    .about-column-left, .about-column-right {
+        display: none; /* Hide the side columns on smaller screens */
+    }
+
+    .about-column-middle {
+        flex: 0; /* Let it take up the necessary space */
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    .about-title {
+        transform: none; /* Keep the title horizontal on smaller screens */
+    }
+}
+

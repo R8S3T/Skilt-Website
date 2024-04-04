@@ -11,17 +11,18 @@ const Landing: React.FC = () => {
         if (screenWidth <= 768) { // For mobile devices
             return "url('images/mobile-background1.png')";
         } else { // For tablets and desktops
-            return "url('images/background6.png')";
+            return "url('images/background8.png')";
         }
     };
 
     return (
-        <main className="landing flex flex-col justify-center items-center h-screen bg-cover bg-center"
-            style={{
-                backgroundImage: getBackgroundImage(), // Using the function to set the background image
-                backgroundSize: 'cover',
-                backgroundPosition: 'center bottom'
-            }}>
+        <main
+        className="landing"
+        style={{
+            backgroundImage: getBackgroundImage(),
+            backgroundPosition: 'center bottom'
+        }}
+    >
             <h2 className="text-6xl text-my-heading text-center font-bold mb-4">
                 Lernen im SHK-Handwerk <br />
                 neu definiert

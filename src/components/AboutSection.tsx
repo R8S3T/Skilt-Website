@@ -1,21 +1,23 @@
 import React from 'react';
 import '../styles/AboutSection.css'
+
 const AboutSection: React.FC = () => {
     return (
         <section className="about-section">
-            <div className="container">
+            <div className="about-column-left">
                 <h2 className="about-title">Über Skilt</h2>
+            </div>
+            <div className="about-column-middle">
                 <p className="about-text">
-                In einer Welt, in der digitales Lernen immer wichtiger wird, kam die Idee zu Skilt. Aus unseren eigenen Erfahrungen heraus erkannten wir die Notwendigkeit, die Vermittlung von theoretischem Fachwissen im Handwerk zu optimieren. Skilt macht aus komplexem Theoriestoff klare und kurzweilige Lernabschnitte, genau das, was Auszubildende und Umschüler im Handwerk brauchen. Wir wollen eine Plattform schaffen, die Lernen nicht nur einfacher, sondern auch passend für den Alltag der digitalen Generation macht.
+                Skilt entstand aus der Vision, digitales Lernen im Handwerk zu revolutionieren. Wir haben es uns zur Aufgabe gemacht, theoretisches Wissen in verständliche, lebensnahe Lernmodule umzuwandeln – perfekt zugeschnitten auf die Bedürfnisse von Lehrlingen und Berufsumsteigern. Mit unserer Plattform wird Lernen nicht nur vereinfacht, sondern auch in den digitalen Alltag integriert.
 
-Skilt zeichnet sich durch klare, einfach verständliche Texte und die Möglichkeit aus, jederzeit und überall zu lernen – auch offline. Dies macht Skilt zum idealen Begleiter, unabhängig von Standort oder Zeitplan. Mit regelmäßigen Quizzes wird zudem das Gelernte vertieft und gefestigt.
+Unsere Inhalte sind klar formuliert und jederzeit zugänglich, selbst offline. Durch regelmäßige Quizzes festigen Nutzer ihr Wissen. Datenschutz ist uns dabei sehr wichtig; wir sammeln nur essentielle Daten, um eine sichere Lernatmosphäre zu garantieren. Skilt ist ideal sowohl für Einzelpersonen als auch für kleine Betriebe, die nach hochwertigen Bildungsressourcen suchen.
 
-Datenschutz steht bei uns an vorderster Stelle; wir speichern nur die notwendigsten Daten, um eine sichere Lernumgebung zu gewährleisten. Skilt richtet sich nicht nur an individuelle Lernende, sondern auch an kleine Handwerksbetriebe, die ihren Auszubildenden qualitativ hochwertige Bildungsressourcen bieten möchten.
-
-Die Motivation hinter Skilt kommt aus unserer eigenen Lernerfahrung. Inspiriert durch die Herausforderungen als Ausbilder im SHK-Bereich, und der eigenen Erkenntnisse über die Bedeutung zugänglicher digitaler Lernmittel, zielt Skilt darauf ab, den Lernerfolg durch Vereinfachung komplexer Inhalte zu steigern.
-
-Wir befinden uns in der Entwicklungsphase und planen, Skilt in naher Zukunft der Öffentlichkeit zugänglich zu machen. 
+Die Entwicklung von Skilt wird durch unsere Erfahrungen als Ausbilder und durch das Wissen um die Kraft digitaler Bildung vorangetrieben. Wir arbeiten daran, Skilt bald einem breiten Publikum vorzustellen.
                 </p>
+            </div>
+            <div className="about-column-right">
+                {/* This can be left empty if it's just for the background color */}
             </div>
         </section>
     );
