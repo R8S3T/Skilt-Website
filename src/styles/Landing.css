@@ -10,17 +10,17 @@
 
 .landing h2 {
   font-size: 4rem; /* Large screens */
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .landing p {
   font-size: 1.25rem; /* Large screens */
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-  /* Removed background-image setting since it's now in the .tsx file */
-
   .landing h2 {
       font-size: 2rem;
       text-align: center; 

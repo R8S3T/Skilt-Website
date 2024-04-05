@@ -1,10 +1,6 @@
 .demo-section {
   position: relative;
   min-height: 100vh;
-  background-image: url('../../public/images/background3.png');
-  background-position: center center;
-  background-size: cover; /* Adjust as needed */
-  background-repeat: no-repeat;
 }
 
 .slide-container {

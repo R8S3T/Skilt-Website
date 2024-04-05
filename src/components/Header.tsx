@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     return (
         <header className="bg-my-blue text-white text-lg p-4 flex justify-between items-center">
             <div className="ml-2">
-                <h1 className="font-bold">Skilt App</h1>
+                <h1 className="font-bold text-blue-200">Skilt App</h1>
             </div>
             <nav className="hidden md:flex md:items-center">
                 <ul className="flex flex-row">

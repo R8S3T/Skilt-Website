@@ -1,34 +1,37 @@
 .about-section {
-    display: flex; /* Use flexbox to create the columns */
-    min-height: 50vh; /* Fill the screen vertically */
-    color: #333; /* Text color */
+    display: flex;
+    min-height: 50vh;
+    color: #333;
 }
 
 .about-column-left, .about-column-right {
-    background-color: #73d5d1; /* Replace with the color you want */
-    flex: 1; /* Take up equal space */
+    position: relative;
+    background-color: #1c4c74;
+    flex: 1;
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    justify-content: center;
 }
 
 .about-column-middle {
-    flex: 2; /* Take up double the space compared to the side columns */
-    padding: 0px 100px; /* Remove top padding, retain horizontal padding */
+    flex: 2;
+    padding: 0px 100px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: flex-start; /* Align content to start at the top */
-    max-width: 800px; /* Adjust as needed */
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 800px;
 }
 
 
 .about-title {
+    position: absolute;
     font-size: 3.5rem;
-    color: #333;
-    transform: rotate(-90deg); /* Rotate the title for horizontal orientation */
-    transform-origin: left; /* Set the origin of rotation */
-    white-space: nowrap; /* Ensure the title is on a single line */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transform-origin: center;
+    white-space: nowrap;
 }
 
 .about-text {
@@ -38,7 +41,7 @@
     margin-top: 1rem;
 }
 
-/* Add responsive styles as necessary */
+/* Responsive styles for small screens */
 @media (max-width: 768px) {
     .about-column-left, .about-column-right {
         display: none; /* Hide the side columns on smaller screens */
