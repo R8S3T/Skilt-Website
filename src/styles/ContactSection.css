@@ -30,3 +30,27 @@
 .contact-email:hover {
     text-decoration: underline;
 }
+
+.sprite-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap to your preference */
+    margin-bottom: 20px; /* Space before the email link */
+}
+
+.rebecca-sprite {
+    width: 115px; /* Adjust the size to your preference */
+    height: auto; /* Maintains the aspect ratio of the images */
+}
+
+.flori-sprite {
+    width: 130px; /* Adjust the size to your preference */
+    height: auto; /* Maintains the aspect ratio of the images */
+}
+
+.contact-email {
+    /* Your existing styles for the email link */
+    display: block; /* To ensure it takes its own line */
+    margin: 0 auto 20px; /* Centers the link and adds space after it */
+}
+

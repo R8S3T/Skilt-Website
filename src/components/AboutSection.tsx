@@ -9,11 +9,16 @@ const AboutSection: React.FC = () => {
             </div>
             <div className="about-column-middle">
                 <p className="about-text">
-                Skilt entstand aus der Vision, digitales Lernen im Handwerk zu revolutionieren. Wir haben es uns zur Aufgabe gemacht, theoretisches Wissen in verständliche, lebensnahe Lernmodule umzuwandeln – perfekt zugeschnitten auf die Bedürfnisse von Lehrlingen und Berufsumsteigern. Mit unserer Plattform wird Lernen nicht nur vereinfacht, sondern auch in den digitalen Alltag integriert.
-
-Unsere Inhalte sind klar formuliert und jederzeit zugänglich, selbst offline. Durch regelmäßige Quizzes festigen Nutzer ihr Wissen. Datenschutz ist uns dabei sehr wichtig; wir sammeln nur essentielle Daten, um eine sichere Lernatmosphäre zu garantieren. Skilt ist ideal sowohl für Einzelpersonen als auch für kleine Betriebe, die nach hochwertigen Bildungsressourcen suchen.
-
-Die Entwicklung von Skilt wird durch unsere Erfahrungen als Ausbilder und durch das Wissen um die Kraft digitaler Bildung vorangetrieben. Wir arbeiten daran, Skilt bald einem breiten Publikum vorzustellen.
+                    Skilt wurde mit dem Ziel ins Leben gerufen, das digitale Lernen im Handwerksbereich völlig neu zu gestalten. Unser Anliegen ist es, komplexes theoretisches Wissen in praxisnahe, leicht verständliche Lernmodule zu verwandeln, die genau auf die Anforderungen von Auszubildenden und Quereinsteigern zugeschnitten sind.
+                </p>
+                <p className="about-text">
+                    Unsere Plattform macht das Lernen nicht nur einfacher, sondern fügt es nahtlos in den digitalen Alltag ein. Die Lerninhalte sind direkt und jederzeit auch ohne Internetverbindung verfügbar. Durch wiederkehrende Quizze können unsere Nutzer ihr Wissen effektiv vertiefen.
+                </p>
+                <p className="about-text">
+                    Der Schutz persönlicher Daten liegt uns am Herzen; deshalb erheben wir nur die notwendigsten Informationen, um eine sichere Lernumgebung zu gewährleisten.
+                </p>
+                <p className="about-text">
+                    Unsere Erfahrungen als Ausbilder und unsere Überzeugung von der Macht digitaler Bildung treiben die Entwicklung von Skilt voran. Skilt eignet sich hervorragend für Einzelpersonen und kleinere Unternehmen, die Wert auf qualitativ hochwertige Bildungsmaterialien legen. Unsere App befindet sich noch in der Entwicklungsphase und wir bald in den Appstores verfügbar sein.
                 </p>
             </div>
             <div className="about-column-right">

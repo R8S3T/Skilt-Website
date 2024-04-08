@@ -9,7 +9,7 @@ const DemoSection: React.FC = () => {
                 <div className="demo-slides-container">
                     <div className="demo-slides">
                         <img src="../images/Slide1.png" alt="Demo Screen 1" className="slide" />
-                        <img src="../images/Slide2.png" alt="Demo Screen 1" className="slide" />
+{/*                         <img src="../images/Slide2.png" alt="Demo Screen 1" className="slide" /> */}
                         <img src="../images/Slide3.png" alt="Demo Screen 1" className="slide" />
                         <img src="../images/Slide4.png" alt="Demo Screen 1" className="slide" />
                         <img src="../images/Slide5.png" alt="Demo Screen 1" className="slide" />
