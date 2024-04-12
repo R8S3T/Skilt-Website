@@ -3,58 +3,73 @@
     min-height: 40vh;
     color: #333;
     margin-bottom: 200px;
+    background-color: #407088; /* Ensuring visibility */
 }
 
-.about-column-left, .about-column-right {
-    position: relative;
-    background-color: #407088;
-    flex: 1;
+.about-column-left {
+    flex: 0.3;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 150px; /* Ensure it's wide enough for rotated text */
+    background-color: #407088; /* Consistent with section */
+    position: relative; /* Establishing positioning context */
 }
 
-.about-column-middle {
+.about-column-main {
     flex: 2;
-    padding: 0px 50px;
+    padding: 0px 60px;
+    background-color: rgba(64, 112, 136, 0.1) !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    max-width: 800px;
+    max-width: 50rem;
+    margin-left: 4rem;
 }
-
 
 .about-title {
     position: absolute;
     font-size: 3.5rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    transform-origin: center;
+    bottom: 25%; /* Align at the bottom of the left column */
+    left: 50%; /* Start just after the end of the left column */
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
     white-space: nowrap;
+    color: #fff; /* Ensure visibility */
 }
 
 .about-text {
-    font-size: 1rem;
+    font-size: 1.8rem;
     line-height: 1.6;
     text-align: left;
-    margin-top: 1rem;
+    margin: 1.5rem;
+    color: #fff; /* Ensure visibility */
 }
 
-/* Responsive styles for small screens */
 @media (max-width: 768px) {
-    .about-column-left, .about-column-right {
-        display: none; /* Hide the side columns on smaller screens */
+    .about-column-left {
+        display: none;
     }
 
-    .about-column-middle {
-        flex: 0; /* Let it take up the necessary space */
-        padding: 20px; /* Less padding on smaller screens */
+    .about-column-main {
+        flex: 1;
+        padding: 20px;
+        margin-left: 0;
     }
 
     .about-title {
-        transform: none; /* Keep the title horizontal on smaller screens */
+        position: relative;
+        font-size: 2.5rem;
+        left: 0;
+        bottom: 0;
+        transform: none;
+    }
+
+    .about-text {
+        font-size: 1.5rem;
     }
 }
+
+
 
