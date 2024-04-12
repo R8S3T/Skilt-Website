@@ -1,12 +1,13 @@
 .about-section {
     display: flex;
-    min-height: 50vh;
+    min-height: 40vh;
     color: #333;
+    margin-bottom: 200px;
 }
 
 .about-column-left, .about-column-right {
     position: relative;
-    background-color: #1c4c74;
+    background-color: #407088;
     flex: 1;
     display: flex;
     align-items: center;
@@ -15,7 +16,7 @@
 
 .about-column-middle {
     flex: 2;
-    padding: 0px 100px;
+    padding: 0px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;

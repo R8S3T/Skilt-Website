@@ -16,7 +16,7 @@ const Header: React.FC = () => {
             <nav className="hidden md:flex md:items-center">
                 <ul className="flex flex-row">
                     <li className="mr-6">
-                        <a className="text-blue-200 hover:text-blue-100" href="#features">Funktionen</a>
+                        <a className="text-blue-200 hover:text-blue-100" href="#demo">Funktionen</a>
                     </li>
                     <li className="mr-6">
                         <a className="text-blue-200 hover:text-blue-100" href="#about">Über Skilt</a>

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header.tsx';
 import Landing from './components/Landing.tsx';
 import DemoSection from './components/DemoSection.tsx';
+import Features from './components/Features.tsx';
 import AboutSection from './components/AboutSection.tsx';
 import ContactSection from './components/ContactSection.tsx';
 import Footer from './components/Footer.tsx';
@@ -18,7 +19,8 @@ const App: React.FC = () => {
             <Route path="/" element={
               <BackgroundContainer>
               <Landing />
-              <div id="features"><DemoSection /></div>
+              <div id="demo"><DemoSection /></div>
+              <div id="features"><Features /></div>
               <div id="about"><AboutSection /></div>
               <div id="contact"><ContactSection /></div>
             </BackgroundContainer>
