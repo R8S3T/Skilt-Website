@@ -11,14 +11,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 150px; /* Ensure it's wide enough for rotated text */
-    background-color: #407088; /* Consistent with section */
-    position: relative; /* Establishing positioning context */
+    min-width: 150px;
+    background-color: #407088;
+    position: relative;
 }
 
 .about-column-main {
     flex: 2;
-    padding: 0px 60px;
+    padding: 0px 20px;
     background-color: rgba(64, 112, 136, 0.1) !important;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
     line-height: 1.6;
     text-align: left;
     margin: 1.5rem;
-    color: #fff; /* Ensure visibility */
+    color: #fff;
 }
 
 @media (max-width: 768px) {

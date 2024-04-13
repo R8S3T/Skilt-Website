@@ -5,15 +5,15 @@ const ContactSection: React.FC = () => {
     return (
         <section className="contact-section">
             <div className="container">
-                <h2 className="contact-title">Kontakt</h2>
+                <h2 className="contact-title">Schreib uns</h2>
+                <p className="contact-info">
+                    Wenn du mehr wissen willst oder mitmachen möchtest – ob als Einzelperson oder mit deinem Unternehmen – schreib uns einfach an.
+                </p>
                 <div className="sprite-wrapper">
                     <img src="../images/rebecca.png" alt="Rebecca" className="rebecca-sprite"/>
                     <img src="../images/flori.png" alt="Florian" className="flori-sprite"/>
                 </div>
                 <a href="mailto:info@skilt.app" className="contact-email">info@skilt.app</a>
-                <p className="contact-info">
-                    Wenn du mehr wissen willst oder mitmachen möchtest – ob als Einzelperson oder mit deinem Unternehmen – schreib uns einfach an.
-                </p>
             </div>
         </section>
     );

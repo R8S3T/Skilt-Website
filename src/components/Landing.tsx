@@ -28,7 +28,7 @@ const Landing: React.FC = () => {
                 neu definiert
             </h2>
             <p className="text-xl text-my-heading text-center">
-                Effektive Lernhäppchen und Übungen in einer App, <br />
+                Effektive Lernhäppchen und Übungen für die Ausbildung in einer App, <br />
                 die perfekt in Deinen Alltag passen
             </p>
             <button className="mt-8 bg-my-blue text-white font-bold py-2 px-4 rounded hover:bg-blue-800">

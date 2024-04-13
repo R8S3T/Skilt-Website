@@ -8,9 +8,11 @@ const AboutSection: React.FC = () => {
                 <h2 className="about-title text-blue-200">Über Skilt</h2>
             </div>
             <div className="about-column-main">
-                <p className="about-text text-blue-200">
-                    Skilt ist eine Lernapp für Auszubildende im Handwerk, die komplexes Wissen in einfache und verständliche Lerneinheiten aufbricht. Durch interaktive Quizzes und kurze Wissenshäppchen wird das Lernen nicht nur effektiver, sondern auch persönlicher gestaltet. So können Nutzer jederzeit und überall auf die Inhalte zugreifen und in ihrem eigenen Tempo lernen.
-                </p>
+            <div className="about-text text-blue-200">
+                <p>Skilt macht komplexe Themen aus der SHK-Ausbildung leicht verständlich und zugänglich.</p>
+                <p>Die kurzen Wissenshäppchen und interaktiven Quizzes gestalten das Lernen nicht nur effektiver, sondern sind auch optimal an die Bedürfnisse der digitalen Generation angepasst.</p>
+                <p>Die App ist ein zuverlässiger Begleiter während der Ausbildung um das Gelernte zu vertiefen und zu festigen.</p>
+            </div>
             </div>
         </section>
     );

@@ -1,46 +1,47 @@
 import React from 'react';
+import '../styles/Features.css';
 
 const Features: React.FC = () => {
     return (
-        <div className="py-2 mb-16">
-            <div className="max-w-8xl mx-auto pl-10 px-10">
+        <div className="features-container">
+            <div className="max-width-container">
                 {/* Row 1 */}
                 <div className="flex flex-wrap justify-between items-center mb-12">
                     {/* Feature 1 */}
-                    <div className="flex flex-1 items-center pl-10 px-1 m-6">
-                        <img src="../images/bullet1.png" alt="Expert-led video" className="ml-8" /> {/* Reduced margin even further */}
-                        <div className='mr-8'>
-                            <h3 className="text-xl font-semibold mb-2">Expert-led video courses</h3>
-                            <p>Find all the instructions you need to get an entry-level job in tech.</p>
+                    <div className="feature-item">
+                        <img src="../images/bullet1.png" alt="Expert-led video" className="feature-image" />
+                        <div className="feature-text text-my-heading">
+                            <h3>Praxisnahes Lernen</h3>
+                            <p>Die Inhalte von Skilt orientieren sich an den Lehrplänen der Berufsschulen und schaffen so eine nahtlose Verbindung zum Unterricht.</p>
                         </div>
                     </div>
                     {/* Feature 2 */}
-                    <div className="flex flex-1 items-center pl-10 px-1 m-6">
-                        <img src="../images/bullet2.png" alt="In-demand topics" className="ml-2" /> {/* Reduced margin even further */}
-                        <div className='mr-8'>
-                            <h3 className="text-xl font-semibold mb-2">In-demand topics</h3>
-                            <p>Stay up to date with your skills.</p>
+                    <div className="feature-item">
+                        <img src="../images/bullet2.png" alt="In-demand topics" className="feature-image" />
+                        <div className="feature-text text-my-heading">
+                            <h3>Kurze Lerneinheiten</h3>
+                            <p>Skilt bietet kurze, inhaltsreiche Lerneinheiten, die komplexe Themen einfach vermitteln und sich perfekt in den Alltag integrieren lassen.</p>
                         </div>
                     </div>
                 </div>
-                    {/* Horizontal Divider */}
-                    <div className="w-full bg-black opacity-20 h-px my-8"></div>
+                {/* Horizontal Divider */}
+                <div className="horizontal-divider"></div>
                 {/* Row 2 */}
                 <div className="flex flex-wrap justify-between items-center">
                     {/* Feature 3 */}
-                    <div className="flex flex-1 items-center pl-10 px-1 m-6">
-                        <img src="../images/bullet3.png" alt="Segment learning" className="ml-8" /> {/* Reduced margin even further */}
-                        <div className='mr-8'>
-                            <h3 className="text-xl font-semibold mb-2">Segment your learning with Tracks</h3>
-                            <p>Each of our Tracks is a mini-program designed to teach you a particular set of skills.</p>
+                    <div className="feature-item">
+                        <img src="../images/bullet3.png" alt="Segment learning" className="feature-image" />
+                        <div className="feature-text text-my-heading">
+                            <h3>Offline nutzbar</h3>
+                            <p>Mit der Offline-Funktion wird sichergestellt, dass überall gelernt werden kann. Es werden nur notwendige Daten gespeichert</p>
                         </div>
                     </div>
                     {/* Feature 4 */}
-                    <div className="flex flex-1 items-center pl-10 px-1 my-6">
-                        <img src="../images/bullet4.png" alt="Interactive learning" className="ml-2" /> {/* Reduced margin even further */}
-                        <div className='mr-8'>
-                            <h3 className="text-xl font-semibold mb-2">Interactive learning</h3>
-                            <p>Our courses have quizzes and code challenges to keep you engaged.</p>
+                    <div className="feature-item">
+                        <img src="../images/bullet4.png" alt="Interactive learning" className="feature-image" />
+                        <div className="feature-text text-my-heading">
+                            <h3>Quizzes und Prüfungsvorbereitung</h3>
+                            <p>Durch Übungen und Quizzes wird das Gelernte gefestigt und bereitet mit  dem Prüfungsmodul optimal auf Prüfungen vor.</p>
                         </div>
                     </div>
                 </div>
@@ -50,4 +51,3 @@ const Features: React.FC = () => {
 };
 
 export default Features;
-
