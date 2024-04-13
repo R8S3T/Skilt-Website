@@ -1,0 +1,43 @@
+.impressum-container {
+    padding: 20px;
+}
+
+.impressum-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.impressum-section {
+    font-size: 32px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.impressum-details p {
+    margin-bottom: 10px;
+}
+
+.impressum-address {
+    margin-left: 20px;
+    line-height: 1;
+}
+
+.impressum-representative {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.impressum-contact {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+
+

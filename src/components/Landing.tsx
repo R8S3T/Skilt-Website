@@ -31,9 +31,11 @@ const Landing: React.FC = () => {
                 Effektive Lernhäppchen und Übungen für die Ausbildung in einer App, <br />
                 die perfekt in Deinen Alltag passen
             </p>
-            <button className="mt-8 bg-my-blue text-white font-bold py-2 px-4 rounded hover:bg-blue-800">
-                Erfahre mehr
-            </button>
+            <a href="#features">
+                <button className="mt-8 bg-my-blue text-white font-bold py-2 px-4 rounded hover:bg-orange-500 active:bg-orange-700">
+                    Erfahre mehr
+                </button>
+            </a>
         </main>
     );
 };

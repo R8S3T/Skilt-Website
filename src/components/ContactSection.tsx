@@ -13,10 +13,11 @@ const ContactSection: React.FC = () => {
                     <img src="../images/rebecca.png" alt="Rebecca" className="rebecca-sprite"/>
                     <img src="../images/flori.png" alt="Florian" className="flori-sprite"/>
                 </div>
-                <a href="mailto:info@skilt.app" className="contact-email">info@skilt.app</a>
+                <p className="contact-email">info@skilt.app</p>
             </div>
         </section>
     );
 };
 
 export default ContactSection;
+

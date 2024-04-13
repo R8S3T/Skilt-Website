@@ -1,14 +1,18 @@
 
 .contact-section {
-    background-size: cover; /* This will ensure that your background covers the entire section */
-    background-position: center; /* This will center your background image in the section */
+    padding: 100px 0;
+    background-image: url('../../public/images/contact_background.png'); /* Adjust the path and image */
+    background-size: cover;
+    background-position: center bottom;
 }
+
 .contact-section {
     padding: 50px 0;
 }
 
 .container {
     max-width: 50rem;
+    min-height: 30rem;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
@@ -23,39 +27,36 @@
 .contact-info {
     font-size: 1.50rem;
     line-height: 1.6;
-    color: #666;
+    font-weight: 350;
+    color: #132743;
 }
 
 .contact-email {
-    font-size: 1.25rem;
-    color: #007bff;
+    font-size: 1.50rem;
+    font-weight: 500;
+    color: #132743;
     text-decoration: none;
-}
-
-.contact-email:hover {
-    text-decoration: underline;
 }
 
 .sprite-wrapper {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Adjust the gap to your preference */
-    margin-bottom: 20px; /* Space before the email link */
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .rebecca-sprite {
-    width: 115px; /* Adjust the size to your preference */
-    height: auto; /* Maintains the aspect ratio of the images */
+    width: 115px;
+    height: auto;
 }
 
 .flori-sprite {
-    width: 130px; /* Adjust the size to your preference */
-    height: auto; /* Maintains the aspect ratio of the images */
+    width: 130px;
+    height: auto;
 }
 
 .contact-email {
-    /* Your existing styles for the email link */
-    display: block; /* To ensure it takes its own line */
-    margin: 0 auto 20px; /* Centers the link and adds space after it */
+    display: block;
+    margin: 0 auto 20px;
 }
 

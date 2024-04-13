@@ -9,6 +9,7 @@ import ContactSection from './components/ContactSection.tsx';
 import Footer from './components/Footer.tsx';
 import BackgroundContainer from './components/BackgroundContainer.tsx';
 import PrivacyPolicy from './components/PrivacyPolicy.tsx';
+import Impressum from './components/Impressum.tsx';
 
 const App: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const App: React.FC = () => {
             </BackgroundContainer>
             } />
             <Route path="/datenschutzerklaerung" element={<PrivacyPolicy />} />
+            <Route path="/impressum" element={<Impressum />} />
           </Routes>
           <Footer />
       </div>
