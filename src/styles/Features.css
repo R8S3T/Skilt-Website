@@ -1,3 +1,4 @@
+/* Base styles for Features section */
 .features-container {
     padding-top: 0.5rem;
     margin-bottom: 6rem;
@@ -15,20 +16,21 @@
     display: flex;
     align-items: center;
     flex: 1;
-    padding-left: 2.5rem;
-    padding-right: 0.25rem;
+    padding: 2.5rem 0.25rem;
     margin: 1.5rem;
 }
 
 .feature-image {
-    margin-left: 2rem;
+    flex-shrink: 0; /* Prevents the image from scaling in flexbox */
+    width: 100px; /* Fixed width for consistency */
+    margin-right: 2rem; /* Space between image and text */
 }
 
 .feature-text {
-    margin-right: 2rem;
+    flex-grow: 1;
     text-align: left;
     font-size: 1.25rem;
-    font-weight: 400;
+    line-height: 1.5;
     margin-bottom: 0.5rem;
 }
 
@@ -40,7 +42,6 @@
 .feature-text p {
     font-weight: 350;
     font-size: 1.25rem;
-    line-height: 1.5;
     margin-bottom: 0.5rem;
 }
 
@@ -49,32 +50,48 @@
 }
 
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 
+
+/* Styles for mobile devices */
 @media (max-width: 768px) {
     .max-width-container {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 1rem; /* Simpler padding for smaller screens */
     }
 
     .feature-item {
-        flex-direction: column;
-        padding: 0;
+        flex-direction: column; /* Stack image and text vertically */
+        padding: 1rem 0; /* Adjust padding for vertical stacking */
+        align-items: center; /* Center-align items for aesthetic purposes */
     }
 
     .feature-image {
-        margin-left: 0;
-        margin-bottom: 1rem; /* Add space between the image and text when stacked */
+        margin: 0 auto 1rem; /* Center image and add margin below before text */
+        width: 80px; /* Slightly smaller image on mobile */
     }
 
     .feature-text {
-        font-size: 1rem;
+        text-align: center; /* Center-align text for mobile readability */
+        font-size: 1rem; /* Smaller font size for compact display */
     }
 }
+
+/* Styles for tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .feature-item {
+        flex-direction: row; /* Maintain row direction for tablet */
+        padding: 1.5rem 0.25rem;
+    }
+
+    .feature-image {
+        width: 90px; /* Adjust image size for tablet */
+    }
+
+    .feature-text {
+        font-size: 1.1rem; /* Intermediate font size for tablets */
+    }
+}
+

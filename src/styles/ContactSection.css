@@ -1,13 +1,9 @@
-
 .contact-section {
     padding: 100px 0;
-    background-image: url('../../public/images/contact_background.png'); /* Adjust the path and image */
+    background-image: url('../../public/images/mobile_bottom.png'); /* Ensure correct path */
     background-size: cover;
     background-position: center bottom;
-}
-
-.contact-section {
-    padding: 50px 0;
+    background-repeat: no-repeat; /* Prevent image repetition */
 }
 
 .container {
@@ -25,17 +21,18 @@
 }
 
 .contact-info {
-    font-size: 1.50rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     font-weight: 350;
     color: #132743;
 }
 
 .contact-email {
-    font-size: 1.50rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #132743;
-    text-decoration: none;
+    margin: 0 auto 20px;
+    display: block;
 }
 
 .sprite-wrapper {
@@ -45,18 +42,90 @@
     margin-bottom: 20px;
 }
 
-.rebecca-sprite {
-    width: 115px;
-    height: auto;
-}
-
+.rebecca-sprite,
 .flori-sprite {
-    width: 130px;
-    height: auto;
+    width: auto;
+    height: 100px; /* Control sprite sizes by height to ensure uniformity */
 }
 
-.contact-email {
-    display: block;
-    margin: 0 auto 20px;
+
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 50px 0; /* Adjusted padding to reduce space */
+        background-position: center center; /* Adjust background to better fit mobile views */
+        background-size: cover; /* Ensure the image covers the background completely */
+    }
+
+    .container {
+        padding: 0 10px; /* Smaller padding for smaller screens */
+    }
+
+    .contact-title,
+    .contact-info,
+    .contact-email {
+        font-size: 1.25rem; /* Smaller font size for better readability on mobile */
+    }
+
+    .sprite-wrapper {
+        margin-top: 3rem;
+        flex-direction: row; /* Align images horizontally */
+        justify-content: center; /* Center images horizontally */
+        align-items: center; /* Center images vertically */
+        gap: 10px; /* Maintain a gap between images */
+    }
+
+    .rebecca-sprite,
+    .flori-sprite {
+        width: 80px; /* Adjust width to scale images down */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove any additional margin */
+    }
+
+    .contact-email {
+        margin-top: 20px; /* Reduced top margin for the email */
+    }
 }
+
+
+/* Styles for tablets */
+@media (min-width: 769px) and (max-width: 1300px) {
+    .contact-section {
+        padding: 75px 0;
+        background-image: url('../../public/images/App_background.png'); /* Path for tablet devices */
+        /* Adjust background-position and size if needed */
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .contact-title,
+    .contact-info,
+    .contact-email {
+        font-size: 1.75rem; /* Intermediate font size for tablets */
+    }
+
+    .sprite-wrapper {
+        gap: 20px; /* Adjust gap for tablets */
+    }
+
+    .rebecca-sprite,
+    .flori-sprite {
+        width: 80px; /* Adjust width for tablet screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+}
+
+/* Styles for desktop */
+@media (min-width: 1301px) {
+    .contact-section {
+        background-image: url('../../public/images/contact_background.png'); /* Path for desktop devices */
+        /* Keep other styles or adjust as needed */
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
+
 

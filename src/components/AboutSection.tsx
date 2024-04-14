@@ -3,7 +3,7 @@ import '../styles/AboutSection.css';
 
 const AboutSection: React.FC = () => {
     return (
-        <section className="about-section my-16">
+        <section id="about" className="about-section my-16">
             <div className="about-column-left">
                 <h2 className="about-title text-blue-200">Über Skilt</h2>
             </div>

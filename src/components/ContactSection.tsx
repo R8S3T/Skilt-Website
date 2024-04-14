@@ -3,7 +3,7 @@ import '../styles/ContactSection.css';
 
 const ContactSection: React.FC = () => {
     return (
-        <section className="contact-section">
+        <section id="contact" className="contact-section">
             <div className="container">
                 <h2 className="contact-title">Schreib uns</h2>
                 <p className="contact-info">

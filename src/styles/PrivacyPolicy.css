@@ -1,0 +1,16 @@
+.privacy-policy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to the top */
+    height: calc(100vh - 60px - 90px); /* Subtract header and footer height */
+    padding: 20px; /* Add padding as needed */
+    margin-top: 30px; /* Add top margin as needed */
+    margin-bottom: 30px; /* Add bottom margin as needed */
+}
+
+.privacy-policy-content-wrapper {
+    width: 100%; /* Take up all the horizontal space */
+    max-width: 800px; /* You can set a max-width if you want */
+    margin: 0 auto; /* This will center the content if there's a max-width */
+    padding: 0; /* Adjust padding as needed */
+}

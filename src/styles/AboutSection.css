@@ -1,9 +1,10 @@
+/* Base styles for AboutSection */
 .about-section {
     display: flex;
     min-height: 40vh;
     color: #333;
     margin-bottom: 200px;
-    background-color: #407088; /* Ensuring visibility */
+    background-color: #407088; /* Dark background for contrast */
 }
 
 .about-column-left {
@@ -18,7 +19,7 @@
 
 .about-column-main {
     flex: 2;
-    padding: 0px 20px;
+    padding: 20px;
     background-color: rgba(64, 112, 136, 0.1) !important;
     display: flex;
     flex-direction: column;
@@ -31,12 +32,12 @@
 .about-title {
     position: absolute;
     font-size: 3.5rem;
-    bottom: 25%; /* Align at the bottom of the left column */
-    left: 50%; /* Start just after the end of the left column */
+    bottom: 25%;
+    left: 50%;
     transform: rotate(-90deg);
     transform-origin: bottom left;
     white-space: nowrap;
-    color: #fff; /* Ensure visibility */
+    color: #fff;
 }
 
 .about-text {
@@ -47,27 +48,46 @@
     color: #fff;
 }
 
+
+
+/* Styles for tablets */
+@media (max-width: 1024px) {
+    .about-title {
+        font-size: 2.5rem; /* Smaller font size for tablets */
+    }
+
+    .about-text {
+        font-size: 1.4rem; /* Adjusted text size for better readability on tablets */
+    }
+
+    .about-column-main {
+        padding: 20px;
+        margin-left: 2rem; /* Adjust margin for tablets */
+    }
+}
+
+/* Styles for mobile devices */
 @media (max-width: 768px) {
     .about-column-left {
-        display: none;
+        display: none; /* Hide the left column on mobile for better space utilization */
     }
 
     .about-column-main {
         flex: 1;
         padding: 20px;
-        margin-left: 0;
+        margin-left: 0; /* Adjust layout to take full width on mobile */
     }
 
     .about-title {
         position: relative;
-        font-size: 2.5rem;
+        font-size: 2rem; /* Further reduce title size for mobile */
         left: 0;
         bottom: 0;
-        transform: none;
+        transform: none; /* No rotation on mobile */
     }
 
     .about-text {
-        font-size: 1.5rem;
+        font-size: 1.2rem; /* Smaller font size for mobile */
     }
 }
 

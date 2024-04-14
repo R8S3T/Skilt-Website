@@ -38,7 +38,7 @@ const DemoSection: React.FC = () => {
     }, []);
 
     return (
-        <section className="demo-section">
+        <section id="demo" className="demo-section">
             <div className="slide-container">
                 <div className="demo-slides-container">
                     <div className="demo-slides" ref={scrollContainerRef}>

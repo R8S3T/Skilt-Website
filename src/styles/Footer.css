@@ -1,3 +1,7 @@
-footer.bg-my-blue {
+/* Footer.css */
+
+.bg-my-blue {
     width: 100%;
+    height: [FooterHeight]px; /* Set this to the height of your footer */
+    margin-top: auto; /* This pushes the footer to the bottom */
 }

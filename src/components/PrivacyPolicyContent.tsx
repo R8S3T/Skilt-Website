@@ -2,7 +2,7 @@ import React from 'react';
 
 const PrivacyPolicyContent: React.FC = () => {
     return (
-    <>
+        <div className="privacy-policy-content-container">
         <h1><strong>Datenschutzerklärung</strong></h1><br />
         <h2><strong>1. Datenschutz auf einen Blick</strong></h2><br />
         <h3><strong>Allgemeine Hinweise</strong></h3><br />
@@ -215,17 +215,17 @@ const PrivacyPolicyContent: React.FC = () => {
         <p>
         <ul>
                 <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir
-        in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die
-        Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+                in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die
+                Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
                 <li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie
-        statt der Löschung die Einschränkung der Datenverarbeitung verlangen.</li>
+                statt der Löschung die Einschränkung der Datenverarbeitung verlangen.</li>
                 <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung,
-        Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der
-        Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+                Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der
+                Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
                 <li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen
-        Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen
-        überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten
-        zu verlangen.</li>
+                Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen
+                überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten
+                zu verlangen.</li>
             </ul>
         </p>
         <p>
@@ -235,6 +235,7 @@ const PrivacyPolicyContent: React.FC = () => {
         juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder
         eines Mitgliedstaats verarbeitet werden.
         </p>
+        <br />
         <h3>
             <strong>SSL- bzw. TLS-Verschlüsselung</strong>
         </h3>
@@ -246,7 +247,9 @@ const PrivacyPolicyContent: React.FC = () => {
         Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht
         von Dritten mitgelesen werden.
         </p>
+        <br />
         <h2><strong>4. Datenerfassung auf dieser Website</strong></h2>
+        <br />
         <h3>
             <strong>Anfrage per E-Mail, Telefon oder Telefax</strong>
         </h3>
@@ -267,7 +270,7 @@ const PrivacyPolicyContent: React.FC = () => {
         Quelle:
         https://www.datenschutzerklaerung.de
         </p>
-</>
+        </div>
     );
 };
 

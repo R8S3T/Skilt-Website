@@ -1,3 +1,4 @@
+/* Base styles for DemoSection */
 .demo-section {
   position: relative;
   min-height: 100vh;
@@ -5,16 +6,14 @@
 
 .slide-container {
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   min-height: 45%;
 }
 
 .demo-slides-container {
   overflow: hidden;
   position: relative;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin-top: 150px;
   margin-bottom: 50px;
@@ -27,12 +26,57 @@
 }
 
 .demo-slides img {
-  max-height: 30%;
+  height: auto;
   max-width: 20%;
   margin: 0 80px;
   border-radius: 25px;
   border: 5px solid #ffffff;
 }
+
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  .demo-section {
+    min-height: 50vh; /* Smaller min-height for mobile */
+  }
+
+  .demo-slides-container {
+    margin-top: 50px; /* Smaller top margin */
+    margin-bottom: 20px; /* Smaller bottom margin */
+  }
+
+  .demo-slides img {
+    max-width: 60%; /* Larger relative width for smaller screens */
+    margin: 0 5%; /* Smaller margin */
+  }
+}
+
+/* Styles for tablets in both portrait and landscape orientations */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .demo-section {
+    min-height: 80vh;
+  }
+
+  .demo-slides-container {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  .demo-slides img {
+    max-width: 30%; /* Intermediate size for tablets */
+    margin: 0 40px; /* Adjusted margin for tablets */
+  }
+}
+
+
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .demo-slides img {
+    max-width: 25%; /* Slightly smaller to fit more content on screen */
+    margin: 0 20px;
+  }
+}
+
 
 @keyframes scroll {
   0% {
@@ -43,27 +87,6 @@
   }
 }
 
-/* For smaller screens */
-@media (max-width: 768px) {
-  .demo-section {
-    min-height: auto;
-    background-image: none;
-  }
-
-  .slide-container {
-    min-height: auto;
-  }
-
-  .demo-slides-container {
-    margin-top: 15%;
-  }
-
-  .demo-slides img {
-    max-width: 60%; /* Adjust slide size for mobile */
-    margin: 5%;
-    display: block;
-  }
-}
 
 
 

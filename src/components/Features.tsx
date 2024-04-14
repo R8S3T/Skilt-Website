@@ -47,7 +47,7 @@ const Features: React.FC = () => {
     }, []);
 
     return (
-        <div className="features-container" ref={featuresRef}>
+        <div id="features" className="features-container" ref={featuresRef}>
             <div className="max-width-container">
                 {/* Row 1 */}
                 <div className="flex flex-wrap justify-between items-center mb-12">

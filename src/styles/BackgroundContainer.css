@@ -1,5 +1,5 @@
 .background-container {
-  background-image: linear-gradient(to bottom, #dbd8e3 32%, #F8F8F8 32%);
+  background-image: linear-gradient(to bottom, #dbd8e3 30%, #F8F8F8 30%);
 
   /* Flexbox properties to fill available space */
   flex: 1;
@@ -8,10 +8,17 @@
   justify-content: flex-start;
 }
 
+/* Adjustments for tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .background-container {
+    background-image: linear-gradient(to bottom, #dbd8e3 20%, #F8F8F8 20%);
+  }
+}
+
+/* Adjustments for mobile devices */
 @media (max-width: 768px) {
   .background-container {
-    /* Adjust the gradient for mobile devices */
-    background-image: linear-gradient(to bottom, #dbd8e3 35%, #F8F8F8 35%);
+    background-image: linear-gradient(to bottom, #dbd8e3 15%, #F8F8F8 15%);
   }
 }
 

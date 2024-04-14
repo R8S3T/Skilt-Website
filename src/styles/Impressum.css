@@ -1,5 +1,22 @@
+
+.impressum-page-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* This will allow the container to expand */
+    justify-content: center; /* Center the content vertically if there's extra space */
+    min-height: calc(100vh - 100px); /* Adjust the 100px to account for header/footer height */
+}
+
+/* Existing styles */
 .impressum-container {
-    padding: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: auto; /* Centering the container on the page */
+    min-width: 70%;
+    min-height: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
 .impressum-heading {
@@ -7,37 +24,24 @@
     font-weight: bold;
     color: #333;
     margin-bottom: 30px;
-}
-
-.impressum-section {
-    font-size: 32px;
-    font-weight: bold;
-    color: #666;
-    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 #fff;
 }
 
 .impressum-details p {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Reduced margin */
+    font-size: 18px;
+    line-height: 1.2; /* Reduced line height */
 }
 
 .impressum-address {
-    margin-left: 20px;
-    line-height: 1;
-}
-
-.impressum-representative {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+    margin-left: 0; /* Removing additional left margin */
 }
 
 .impressum-contact {
-    font-size: 36px;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 20px;
+    font-size: 18px; /* Set to same size as other text */
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
-
-
 
