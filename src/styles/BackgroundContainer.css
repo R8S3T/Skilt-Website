@@ -18,7 +18,7 @@
 /* Adjustments for mobile devices */
 @media (max-width: 768px) {
   .background-container {
-    background-image: linear-gradient(to bottom, #dbd8e3 15%, #F8F8F8 15%);
+    background-image: linear-gradient(to bottom, #dbd8e3 125vh, #F8F8F8 50vh);
   }
 }
 

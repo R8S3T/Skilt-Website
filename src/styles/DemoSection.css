@@ -51,6 +51,7 @@
   }
 }
 
+
 /* Styles for tablets in both portrait and landscape orientations */
 @media (min-width: 769px) and (max-width: 1024px) {
   .demo-section {

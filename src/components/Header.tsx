@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/Header.css';
 import { FaBars } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';  // Ensure you import Link and useLocation
 
@@ -13,12 +14,12 @@ const Header: React.FC = () => {
 
     return (
         <header className="bg-my-blue text-white text-lg p-4 flex justify-between items-center">
-            <div className="ml-2">
+        <div className="ml-2">
                 <Link to="/" className="font-bold text-blue-200 hover:text-blue-100 no-underline">
                     <h1>Skilt App</h1>
                 </Link>
             </div>
-            {isMainPage && (  // Conditionally render navigation links based on the page
+            {isMainPage && (
                 <nav className="hidden md:flex md:items-center">
                     <ul className="flex flex-row">
                         <li className="mr-6">
@@ -36,11 +37,11 @@ const Header: React.FC = () => {
             <button className="md:hidden" onClick={toggleNav}>
                 <FaBars className="h-6 w-6" />
             </button>
-            {isNavVisible && isMainPage && (  // Also conditionally render mobile navigation links
-                <nav className="absolute top-16 right-0 bg-my-blue p-4 md:hidden z-50">
+                {isNavVisible && isMainPage && (  // Also conditionally render mobile navigation links
+                    <nav className={`md:hidden ${isNavVisible ? "nav-mobile" : ""}`} style={{ display: isNavVisible ? 'block' : 'none' }}>
                     <ul className="flex flex-col">
                         <li className="mb-2">
-                            <a className="text-blue-200 hover:text-blue-100" href="#demo">Funktionen</a>
+                            <a className="text-blue-200 hover:text-blue-100" href="#demo" onClick={() => setIsNavVisible(false)}>Funktionen</a>
                         </li>
                         <li className="mb-2">
                             <a className="text-blue-200 hover:text-blue-100" href="#about">Über Skilt</a>
@@ -56,5 +57,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
 

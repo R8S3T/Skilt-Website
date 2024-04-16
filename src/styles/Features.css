@@ -57,15 +57,13 @@
 
 
 /* Styles for mobile devices */
-@media (max-width: 768px) {
-    .max-width-container {
-        padding: 1rem; /* Simpler padding for smaller screens */
-    }
-
+@media (max-width: 900px) {
     .feature-item {
-        flex-direction: column; /* Stack image and text vertically */
-        padding: 1rem 0; /* Adjust padding for vertical stacking */
-        align-items: center; /* Center-align items for aesthetic purposes */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+        width: 100%; /* Make sure each item takes the full width of the container */
+        margin: 1rem auto; /* Center the item and add margin */
+        padding: 1rem; /* Adjust padding as needed */
     }
 
     .feature-image {
@@ -75,9 +73,10 @@
 
     .feature-text {
         text-align: center; /* Center-align text for mobile readability */
-        font-size: 1rem; /* Smaller font size for compact display */
+        font-size: 1rem; /* Adjust font size as needed */
     }
 }
+
 
 /* Styles for tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
