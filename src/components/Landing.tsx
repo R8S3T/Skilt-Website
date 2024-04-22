@@ -31,7 +31,7 @@ const Landing: FC = () => {
                 }}
             >
                 <h2 className="text-6xl text-my-heading text-center font-bold mb-4">
-                    Lernen im SHK-Handwerk <br />
+                    Lernen im Handwerk <br />
                     neu definiert
                 </h2>
                 <p className="text-xl text-my-heading text-center">

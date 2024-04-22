@@ -9,9 +9,10 @@ const AboutSection: React.FC = () => {
             </div>
             <div className="about-column-main">
             <div className="about-text text-blue-200">
-                <p>Skilt macht komplexe Themen aus der SHK-Ausbildung leicht verständlich und zugänglich.</p>
+                <p>Skilt macht komplexe Themen aus der Handwerks-Ausbildung leicht verständlich und zugänglich.</p>
                 <p>Die kurzen Wissenshäppchen und interaktiven Quizzes gestalten das Lernen nicht nur effektiver, sondern sind auch optimal an die Bedürfnisse der digitalen Generation angepasst.</p>
-                <p>Die App ist ein zuverlässiger Begleiter während der Ausbildung um das Gelernte zu vertiefen und zu festigen.</p>
+                <p>Die App ist ein zuverlässiger Begleiter während der Ausbildung, um das Gelernte zu vertiefen und zu festigen.</p>
+                <p>Derzeit entwickeln wir den Prototypen speziell für das SHK-Handwerk, planen aber, Skilt künftig auch für weitere Handwerksberufe anzubieten.</p>
             </div>
             </div>
         </section>
