@@ -34,7 +34,6 @@
 }
 
 
-/* Styles for mobile devices */
 @media (max-width: 768px) {
   .demo-section {
     min-height: 50vh; /* Smaller min-height for mobile */
@@ -46,8 +45,20 @@
   }
 
   .demo-slides img {
-    max-width: 60%; /* Larger relative width for smaller screens */
-    margin: 0 5%; /* Smaller margin */
+    height: auto;
+    max-width: 100%; /* Make sure the image fits within the container */
+    scroll-snap-align: start; /* Ensure the slides snap to the start of the container */
+    margin: 0 20px; /* Add space around each slide */
+  }
+
+  .demo-slides img {
+    max-width: 100%; /* Full slide width */
+    margin: 0 auto; /* Center the slide */
+  }
+
+  /* Remove automatic scrolling animation for mobile */
+  .demo-slides {
+    animation: none;
   }
 }
 

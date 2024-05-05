@@ -92,7 +92,6 @@ const PrivacyPolicyContent: React.FC = () => {
         Rebecca Stelter
         Wattstr. 8
         12459 Berlin
-        Telefon: [Telefonnummer der verantwortlichen Stelle]
         E-Mail: info@skilt.app
         Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über
         die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.)

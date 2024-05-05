@@ -1,44 +1,69 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 import '../styles/DemoSection.css';
 
-const DemoSection: React.FC = () => {
-    const scrollContainerRef = useRef<HTMLDivElement>(null);
+const DemoSection = () => {
+    const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+
+    // Setting up swipe handlers
+    const swipeHandlers = useSwipeable({
+        onSwipedLeft: () => {
+            if (window.innerWidth <= 768) {
+                setCurrentIndex(c => (c + 1) % 6); // Assuming there are 6 slides (0-5)
+                setIsAutoScrolling(false); // Stop auto scrolling on swipe
+            }
+        },
+        onSwipedRight: () => {
+            if (window.innerWidth <= 768) {
+                setCurrentIndex(c => (c - 1 + 6) % 6);
+                setIsAutoScrolling(false); // Stop auto scrolling on swipe
+            }
+        },
+        trackMouse: true,
+        onSwiping: (event) => {
+            event.event.preventDefault(); // Prevent default to disable page scroll during swipe
+        }
+    });
 
     useEffect(() => {
         const scrollContainer = scrollContainerRef.current;
-        if (!scrollContainer) return;
+        if (scrollContainer) {
+            scrollContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    }, [currentIndex]);
 
-        // Initial duplication to ensure there is enough content to start with
-        scrollContainer.innerHTML += scrollContainer.innerHTML;
+    useEffect(() => {
+        if (window.innerWidth > 768) { // Only apply automatic scrolling on wider screens
+            if (isAutoScrolling) {
+                const scrollContainer = scrollContainerRef.current;
+                if (!scrollContainer) return;
 
-        let requestID;
-        const speed = 2; // Speed of the scroll
+                scrollContainer.innerHTML += scrollContainer.innerHTML; // Duplicate content
 
-        const step = () => {
-            if (!scrollContainer) return;
+                let requestID;
+                const speed = 2; // Speed of the scroll
 
-            // Move the scroll position
-            scrollContainer.scrollLeft += speed;
+                const step = () => {
+                    scrollContainer.scrollLeft += speed;
+                    if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
+                        scrollContainer.innerHTML += scrollContainer.innerHTML; // Ensure infinite content
+                    }
+                    requestID = requestAnimationFrame(step);
+                };
 
-            // Check if we need to append more slides
-            if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-                // Append additional slides to continue the illusion of infinite scrolling
-                scrollContainer.innerHTML += scrollContainer.innerHTML;
+                requestID = requestAnimationFrame(step);
+                return () => {
+                    cancelAnimationFrame(requestID);
+                    scrollContainer.scrollLeft = 0; // Reset on component unmount
+                };
             }
-
-            requestID = requestAnimationFrame(step);
-        };
-
-        requestID = requestAnimationFrame(step);
-
-        return () => {
-            cancelAnimationFrame(requestID);
-            scrollContainer.scrollLeft = 0; // Reset on component unmount
-        };
-    }, []);
+        }
+    }, [isAutoScrolling]);
 
     return (
-        <section id="demo" className="demo-section">
+        <section id="demo" className="demo-section" {...swipeHandlers}>
             <div className="slide-container">
                 <div className="demo-slides-container">
                     <div className="demo-slides" ref={scrollContainerRef}>
@@ -56,4 +81,9 @@ const DemoSection: React.FC = () => {
 };
 
 export default DemoSection;
+
+
+
+
+
 
