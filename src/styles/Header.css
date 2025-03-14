@@ -1,0 +1,29 @@
+.header {
+    width: 100%;
+    background-color: #385170;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 3rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+/* Styles for tablet and larger screens */
+@media (min-width: 768px) {
+    .logo {
+        height: 5rem; /* Increase size for tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        height: 6rem; /* Further increase size for desktop */
+    }
+}

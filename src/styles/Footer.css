@@ -1,0 +1,41 @@
+/* Footer Styles */
+.footer {
+    background-color: #385170;
+    padding: 1rem;
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-link {
+    color: white;
+    margin: 0 1.5rem; /* Increased margin for more space */
+    text-decoration: none;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Additional Hover Effect for Links */
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Styles for Tablet and Desktop Screens */
+@media (min-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+    .footer-link {
+        color: white;
+        margin: 0 1.5rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+

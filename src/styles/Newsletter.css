@@ -1,0 +1,87 @@
+/* Overlay styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup content box */
+.popup-content {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Same color as the paragraph text */
+    font-weight: bold; /* Keep it bold for emphasis */
+}
+
+/* Close button */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+.newsletter-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button */
+.newsletter-button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-button:hover {
+    background-color: #ff4500; /* Darker orange on hover */
+}
+
+/* Headline styles */
+.popup-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Text paragraph */
+.popup-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,45 @@
+/* Container Styles */
+.thankyou-container {
+    background-color: #f2f2f2; /* Heller Hintergrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: calc(100vh - 180px); /* Gesamthöhe abzüglich Header/Footer */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Frame Styles */
+.thankyou-frame {
+    border: 1px solid #385170;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Text zentrieren */
+}
+
+/* Text Styles */
+.thankyou-text {
+    color: #062c30; /* Dunkler Text */
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Button Styles */
+.thankyou-button {
+    background-color: #ff7f50; /* Coral-Farbe */
+    color: #ffffff; /* Weißer Text */
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.thankyou-button:hover {
+    background-color: #ff4500; /* Dunkleres Orange beim Hover */
+}

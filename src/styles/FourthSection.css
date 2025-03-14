@@ -1,0 +1,118 @@
+/* Default (Mobile) Styles */
+.fourth-section {
+    display: flex;
+    flex-direction: column; /* Stack content for mobile */
+    width: 100%;
+    position: relative; /* To anchor the divider */
+}
+
+.fourth-section .divider {
+    width: 80%; /* Adjust the width of the divider */
+    height: 20px;
+
+}
+
+.fourth-section .textArea {
+    background-color: #f2f2f2; /* Light background for text */
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.fourth-section .textBox {
+    max-width: 600px;
+    text-align: left;
+}
+
+.fourth-section .heading {
+    color: #062c30;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.fourth-section .text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #062c30;
+}
+
+.fourth-section .imageArea {
+    background-color: #385170; /* Dark background for image */
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.fourth-section .frame {
+    border: 1px solid #f2f2f2; /* Thicker frame border */
+    border-radius: 10px; /* Slightly rounder corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    gap: 0.4rem;
+    width: 85%;
+}
+
+.fourth-section .image {
+    max-width: 95%;
+    height: auto;
+}
+
+
+
+/* Styles for tablet and desktop screens */
+@media (min-width: 768px) {
+    .fourth-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: left; /* Left-aligned text */
+    }
+
+    .textArea {
+        flex: 1; /* Equal width for text */
+        padding: 2rem;
+        margin-right: 2rem; /* Space between text and image */
+    }
+
+    .imageArea {
+        flex: 1; /* Equal width for image */
+        display: flex;
+        justify-content: center; /* Center image */
+        padding: 2rem;
+    }
+
+    .textBox {
+        max-width: 600px; /* Limit width for text */
+    }
+
+    .textBox .heading {
+        font-size: 3rem; /* Larger heading */
+        margin-bottom: 1rem; /* Spacing between heading and text */
+    }
+
+    .textBox .text {
+        font-size: 1.5rem;
+    }
+
+    .frame {
+        max-width: 700px; /* Larger frame size */
+        border: 2px solid #f2f2f2;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .image {
+        max-width: 100%; /* Image takes up full container */
+        height: auto;
+    }
+    .fourth-section .divider {
+        display: none; /* Hide the divider on larger screens */
+    }
+}
+
+
+

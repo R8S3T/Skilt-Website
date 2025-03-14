@@ -1,0 +1,63 @@
+/* Default Styles for Mobile */
+.third-section {
+    background-color: #f2f2f2;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.third-section .frame {
+    border: 1px solid #065263;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    width: 95% !important;
+    padding: 1rem;
+}
+
+.third-section .heading {
+    color: #062c30;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.third-section .imageBox {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.third-section .image {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Default size for mobile */
+}
+
+
+/* Styles for Tablet and Larger Screens */
+@media (min-width: 768px) {
+    .third-section .frame {
+        border: 2px solid #065263;
+        gap: 4rem; /* Maximum spacing for desktop */
+        max-width: 80%;
+    }
+
+    .third-section .heading {
+        font-size: 3rem; /* Largest font size for heading on desktop */
+    }
+
+    .third-section .imageBox {
+        justify-content: center;
+    }
+
+    .third-section .image {
+        max-width: 75%; /* Vergrößert das Bild für den Desktop */
+        height: auto; /* Behält das Seitenverhältnis bei */
+    }
+}

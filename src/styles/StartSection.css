@@ -1,0 +1,88 @@
+/* Default (Mobile First) */
+.start-section {
+    background-color: #385170;
+    color: white;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.start-section .logo {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    margin-bottom: 5rem;
+}
+
+.start-section .logo img {
+    max-width: 8rem;
+    height: auto;
+}
+
+.start-section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 20vh;
+}
+
+.start-section .imageBox {
+    max-width: 100%;
+    margin-top: -7vh;
+}
+
+.start-section .textBox {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 40rem;
+}
+
+.start-section .textBox h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.playstore-image {
+    display: block;
+    margin-top: 50px;  /* Abstand zum Text */
+    margin-left: auto;
+    margin-right: auto; /* Bild bleibt mittig */
+}
+
+
+
+/* Tablet and Larger Screens */
+@media (min-width: 768px) {
+    .start-section .content {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin-top: -5vh;
+    }
+
+    .start-section .imageBox {
+        max-width: 50%;
+        margin-bottom: 0;
+        margin-top: -1vh;
+    }
+
+    .start-section .textBox {
+        max-width: 50%;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .start-section .textBox h1 {
+        font-size: 4.5rem;
+    }
+
+    .start-section .textBox p {
+        font-size: 2.5rem;
+        margin-top: 2.5rem;
+    }
+}
