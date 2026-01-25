@@ -20,16 +20,22 @@ const FourthSection = () => {
         <div className="textBox">
           <h2 className="heading">Mathe-Grundlagen auffrischen</h2>
           <p className="text">
-            Das Mathemodul hilft dir, grundlegende mathematische Konzepte und
+            Das <strong>Mathemodul</strong> hilft dir, grundlegende mathematische Konzepte und
             fachspezifisches Wissen zu wiederholen.
+          </p>
+          <p className="text">
+            Du zahlst die App einmalig und kannst sie dauerhaft nutzen –{" "}
+            <strong>ganz ohne Abo oder laufende Kosten</strong>.
           </p>
         </div>
       </div>
-        {/* Divider Line */}
-        <div className="divider"></div>
+
+      {/* Divider Line */}
+      <div className="divider"></div>
     </section>
   );
 };
 
 export default FourthSection;
+
 

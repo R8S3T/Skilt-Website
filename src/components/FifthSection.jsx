@@ -10,12 +10,15 @@ const FifthSection = () => {
                     <h2 className="heading">Interaktiv Lernen und Verstehen</h2>
                     <div className="divider"></div>
                     <p className="text">
-                        Mit über 1000 Lernkarten kannst du dein Wissen gezielt testen und
+                        Mit über <strong>1000 Lernkarten</strong> kannst du dein Wissen gezielt testen und
                         vertiefen.
                     </p>
                     <p className="text">
-                        Dabei helfen dir mehr als 350 Grafiken und Tabellen, die komplexe
-                        Inhalte anschaulich und verständlich vermitteln.
+                        <strong>350 technische Illustrationen und Tabellen</strong> helfen dir, die komplexen
+                        Inhalte anschaulich und verständlich zu vermitteln.
+                    </p>
+                    <p className="text">
+                        Über die integrierte <strong>Suchfunktion</strong> kannst du schnell nach bestimmten Begriffen oder Themen suchen – ideal zum Nachschlagen.
                     </p>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 /* Default (Mobile First) */
 .start-section {
-    background-color: #385170;
+    background-color: #2A3E5E;
     color: white;
     padding: 5%;
     display: flex;
@@ -39,6 +39,10 @@
     font-size: 1.2rem;
     line-height: 1.5;
     max-width: 40rem;
+    /* Positionierung optional – meist nicht mehr nötig, wenn wir keine absolute Positionierung verwenden */
+    /* position: relative; */
+    /* Falls noch nötig, den Abstand oben anpassen */
+    margin-bottom: 2rem;
 }
 
 .start-section .textBox h1 {
@@ -46,15 +50,45 @@
     margin-bottom: 1rem;
 }
 
-.playstore-image {
-    display: block;
-    margin-top: 50px;  /* Abstand zum Text */
-    margin-left: auto;
-    margin-right: auto; /* Bild bleibt mittig */
+.textBox {
+    position: relative;      /* Damit der Pfeil sich relativ zur textBox positioniert */
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 40rem;
+    /* evtl. zentrieren: */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.discount-bubble {
+  position: absolute;       /* Absolut positioniert, bezieht sich auf .textBox */
+  bottom: 90px;             /* Abstand über dem Button (Wert anpassen) */
+  left: 50%;                /* Horizontal in der Mitte */
+  transform: translateX(-50%); /* Zentriert auf der X-Achse */
+  width: 150px;
+  height: auto;
+}
 
+/* Der Button selbst */
+.custom-store-button {
+    display: inline-block;
+    padding: 16px 32px;
+    border: 2px solid #e8630a;
+    background: transparent;
+    color: #e8630a;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 50px; /* Der Button steht etwas tiefer, so ist Platz für den Pfeil */
+}
 
+.custom-store-button:hover {
+    background: #e8630a;
+    color: #ffffff;
+}
 /* Tablet and Larger Screens */
 @media (min-width: 768px) {
     .start-section .content {
@@ -84,5 +118,11 @@
     .start-section .textBox p {
         font-size: 2.5rem;
         margin-top: 2.5rem;
+    }
+    
+    .discount-bubble {
+        width: 320px;
+        margin-top: 40px;
+        margin-bottom: 30px;
     }
 }

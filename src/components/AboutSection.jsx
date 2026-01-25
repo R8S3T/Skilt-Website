@@ -10,30 +10,54 @@ const AboutSection = () => {
 
     return (
         <section className="about-section">
-            {/* Heading */}
             <h2 className="heading">Über Skilt</h2>
             <div className="divider"></div>
 
-            {/* Text Content */}
             <div className="text-box">
                 <p className="text">
-                    Skilt macht theoretische Inhalte der Handwerks-Ausbildung verständlich
-                    und zugänglich.
+                    Unsere Mission ist es, die theoretischen Inhalte der handwerklichen Ausbildung
+                    anschaulich aufzubereiten und zeitgemäß zugänglich zu machen.
                 </p>
                 <p className="text">
-                    Die kurzen Wissenshäppchen und interaktiven Quizzes erleichtern das
-                    Lernen und sind optimal auf die Bedürfnisse der digitalen Generation
-                    abgestimmt.
+                    Mit kompakten Lerneinheiten, interaktiven Übungen und intuitiven Funktionen
+                    gestalten wir Lerninhalte so, dass sie sich nahtlos in deinen Alltag integrieren
+                    lassen.
                 </p>
                 <p className="text">
-                    Skilt SHK wird <strong>im März 2025</strong> im Google Play Store verfügbar sein.
-                    Die App richtet sich an Auszubildende im Beruf Anlagenmechaniker*in SHK und wird künftig auch für weitere Handwerksberufe verfügbar sein. 
-                    <span> Melde dich <strong className="clickable" onClick={handleOpenPopup}>hier</strong> an, wenn du über das genaue Veröffentlichungsdatum informiert werden möchtest.</span>
+                    Unsere Apps richten sich an Auszubildende im Beruf Anlagenmechaniker*in SHK
+                    und werden künftig auch für weitere Handwerksberufe verfügbar sein.
                 </p>
-            </div>
+                <p className="text">
+                    Du möchtest ein gemeinsames Projekt mit uns starten oder hast eine Idee
+                    für eine Zusammenarbeit? Schreib uns gerne unter 
+                    <strong> info@skilt.app</strong>.
+                </p>
 
-            {/* Newsletter Popup */}
-            {isPopupOpen && <NewsletterPopup onClose={handleClosePopup} />}
+                {/* Presseartikel */}
+                <div className="article-box">
+                    <h3 className="article-heading">Skilt wurde in folgenden Fachmedien vorgestellt:</h3>
+                    <ul className="article-list">
+                        <li>
+                            <a
+                                href="https://www.handwerksblatt.de/betriebsfuehrung/lern-app-skilt-fuer-die-ausbildung-zum-anlagenmechaniker-im-sanitaer-heizungs-und-klimatechnik-handwerk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Lern-App „Skilt“ für die Ausbildung im SHK-Handwerk – handwerksblatt.de
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.haustec.de/management/it/digitale-lernhilfen-fuer-shk-anlagenmechaniker-skilt-lernapp-und-formel-guide-im"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Digitale Lernhilfen für SHK-Anlagenmechaniker – haustec.de
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     );
 };

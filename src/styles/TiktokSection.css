@@ -1,0 +1,108 @@
+/* Default (Mobile): einspaltig, kompakt */
+.outer-wrapper {
+  background: #ececec;         /* gesamter Hintergrund */
+  padding: 1rem;               /* Abstand innerhalb */
+}
+
+.tiktok-section {
+    background: #ececec;
+    color: #062c30;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border: 3px solid #e8630a;
+    border-radius: 1rem;
+    margin: 1rem;
+
+}
+
+.tiktok-section .text-box {
+    text-align: center;
+    max-width: 100%;
+}
+
+.tiktok-section .text-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tiktok-section .text-box p {
+    font-size: 1rem;
+}
+
+.slider-box {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Link-Card zum TikTok-Kanal */
+.tiktok-link-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    gap: 1rem;
+    background: black;
+    border-radius: 1rem;
+    text-decoration: none;
+
+}
+
+.tiktok-link-card .tiktok-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.tiktok-link-card span {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Tablet & Desktop (ab 768px): zweispaltig, größere Elemente */
+@media (min-width: 768px) {
+    .tiktok-section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 5%;
+        gap: 3rem;
+    }
+
+    .tiktok-section .text-box {
+        flex: 1;
+        max-width: 40%;
+        text-align: left;
+    }
+
+    .tiktok-section .text-box h2 {
+        font-size: 2.8rem;
+    }
+
+    .tiktok-section .text-box p {
+        font-size: 1.6rem;
+    }
+
+    .slider-box {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .tiktok-link-card {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .tiktok-link-card .tiktok-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tiktok-link-card span {
+        font-size: 1.1rem;
+    }
+}

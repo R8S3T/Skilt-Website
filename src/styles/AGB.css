@@ -1,0 +1,32 @@
+.agb-container {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    height: auto;
+    min-height: calc(100vh - 180px);
+    box-sizing: border-box;
+}
+
+.agb-frame {
+    border: 1px solid #385170;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.agb-title {
+    color: #062c30;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.agb-text {
+    color: #062c30;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    white-space: pre-line; /* Zeilenumbrüche aus dem Text erhalten */
+}

@@ -1,5 +1,5 @@
 .about-section {
-    background-color: #385170; /* Dark blue background */
+    background-color: #2A3E5E; /* Dark blue background */
     color: #f2f2f2; /* Light text color */
     padding: 3rem 5%;
     text-align: center;
@@ -48,7 +48,39 @@
     text-decoration: none; /* Ensure no underline on hover */
 }
 
+.article-box {
+    border-left: 2px solid #f2f2f2;
+    padding-left: 1rem;
+    margin-top: 3rem;
+    text-align: left;
+}
 
+.article-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #f2f2f2;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-list li {
+    margin-bottom: 0.8rem;
+}
+
+.article-list a {
+    color: #e8630a;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.article-list a:hover {
+    text-decoration: underline;
+}
 
 /* Styles for Tablet and Desktop Screens */
 @media (min-width: 768px) {
@@ -75,5 +107,13 @@
     .about-section .divider {
         width: 40%; /* Make the divider smaller */
         margin: 1.5rem auto; /* Center the divider */
+    }
+
+        .article-heading {
+        font-size: 1.6rem;
+    }
+
+    .article-list a {
+        font-size: 1.2rem;
     }
 }

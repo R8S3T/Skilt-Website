@@ -1,9 +1,11 @@
+/*SecondSection.css*/
+
 /* Default styles for mobile devices */
 .second-section {
     background-color: #9fd3c7;
     padding: 5%;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
@@ -39,42 +41,44 @@ height: auto;
 max-width: 400px; /* Optional: Limit the size for mobile */
 }
 
+
 /* Styles for tablet and desktop screens */
 @media (min-width: 768px) {
-.second-section {
-    flex-direction: row;
-    justify-content: center;
-    text-align: left;
-}
+    .second-section {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
 
-.second-section .text-box {
-    max-width: 50%;
-    flex: 1;
-}
+    .second-section .text-box {
+        max-width: 50%;
+        flex: 1;
+        margin-top: -4rem;
+    }
 
-.second-section .text-box .heading {
-    font-size: 3rem;
-}
+    .second-section .text-box .heading {
+        font-size: 3rem;
+    }
 
-.second-section .text-box .text {
-    font-size: 1.5rem;
-}
+    .second-section .text-box .text {
+        font-size: 1.5rem;
+    }
 
-.second-section .image-box {
-    max-width: 50%;
-    margin-left: 2rem;
-    flex: 1;
-}
+    .second-section .image-box {
+        max-width: 50%;
+        margin-left: 2rem;
+        flex: 1;
+    }
 
-.second-section .image {
-    max-width: 100%;
-}
+    .second-section .image {
+        max-width: 100%;
+    }
 
-.second-section .heading {
-    font-size: 2rem;
-}
+    .second-section .heading {
+        font-size: 2rem;
+    }
 
-.second-section .text {
-    font-size: 1.2rem;
-}
+    .second-section .text {
+        font-size: 1.2rem;
+    }
 }

@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StartSection from "./components/StartSection";
 import SecondSection from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
-import FourthSection from "./components/FourthSection";
-import FifthSection from "./components/FifthSection";
+import TiktokSection from "./components/TiktokSection";
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import Impressum from "./pages/Impressum";
+import AGB from "./pages/AGB";
 import ThankYouSection from "./pages/ThankYouSection";
+import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
   return (
@@ -23,14 +24,15 @@ const App = () => {
                 <StartSection />
                 <SecondSection />
                 <ThirdSection />
-                <FourthSection />
-                <FifthSection />
+                <TiktokSection />
                 <AboutSection />
               </>
             }
           />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/agb" element={<AGB />} />
           <Route path="/danke" element={<ThankYouSection />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
         {/* Footer */}
         <Footer />

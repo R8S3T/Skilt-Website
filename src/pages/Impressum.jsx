@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import "../styles/Impressum.css"; // Import der CSS-Datei
+import "../styles/Impressum.css";
 
 const Impressum = () => {
     return (
@@ -9,7 +9,7 @@ const Impressum = () => {
             <div className="impressum-container">
                 <div className="impressum-frame">
                     <p className="impressum-text">
-                        Skilt wird von Calisma betrieben.
+                        Skilt wird von Skilt Studio betrieben.
                     </p>
                     <p className="impressum-text">
                         Verantwortlich für den Inhalt:
@@ -17,7 +17,7 @@ const Impressum = () => {
                     <p className="impressum-text">
                         Rebecca Stelter
                     </p>
-                    <p className="impressum-text">Wattstr. 8, 12459 Berlin</p>
+                    <p className="impressum-text">Gubener Str. 36A, 03149 Forst (Lausitz)</p>
                     <p className="impressum-text">
                         Kontakt:{" "}
                         <a href="mailto:info@skilt.app" className="impressum-link">

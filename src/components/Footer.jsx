@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "../styles/Footer.css"; // Import the separated styles
-import NewsletterPopup from "../pages/Newsletter";
+import "../styles/Footer.css";
+import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+
+// import NewsletterPopup from "../pages/Newsletter"; // Newsletter auskommentiert
 
 const Footer = () => {
     const navigate = useNavigate();
@@ -21,40 +23,26 @@ const Footer = () => {
         }
     };
 
-    const handleOpenNewsletter = () => {
-        setIsPopupOpen(true);
-    };
-
-    const handleCloseNewsletter = () => {
-        setIsPopupOpen(false);
-    };
-
     return (
         <footer className="footer">
-            <nav>
-                {/* Start Link */}
-                <button onClick={handleStartClick} className="footer-link">
-                    Start
-                </button>
+        <div className="footer-nav">
+            <button onClick={handleStartClick} className="footer-link">Start</button>
+            <a href="mailto:info@skilt.app" className="footer-link">Kontakt</a>
+            <a href="/impressum" className="footer-link">Impressum</a>
+            <a href="/agb" className="footer-link">AGBs</a>
+        </div>
 
-                {/* Kontakt - Email Link */}
-                <a href="mailto:info@skilt.app" className="footer-link">
-                    Kontakt
-                </a>
-
-                {/* Impressum Link */}
-                <a href="/impressum" className="footer-link">
-                    Impressum
-                </a>
-
-                {/* Newsletter Link */}
-                <button onClick={handleOpenNewsletter} className="footer-link">
-                    Newsletter
-                </button>
-            </nav>
-
-            {/* Newsletter Popup */}
-            {isPopupOpen && <NewsletterPopup onClose={handleCloseNewsletter} />}
+        <div className="footer-socials">
+            <a href="https://www.instagram.com/skilt.app/" target="_blank" rel="noopener noreferrer" className="footer-link" aria-label="Instagram">
+            <FaInstagram size={22} />
+            </a>
+            <a href="https://www.tiktok.com/@skilt_lernapp" target="_blank" rel="noopener noreferrer" className="footer-link" aria-label="TikTok">
+            <FaTiktok size={22} />
+            </a>
+            <a href="https://www.youtube.com/@SkiltApp" target="_blank" rel="noopener noreferrer" className="footer-link" aria-label="YouTube">
+            <FaYoutube size={22} />
+            </a>
+        </div>
         </footer>
     );
 };
