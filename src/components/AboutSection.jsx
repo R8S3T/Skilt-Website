@@ -15,7 +15,7 @@ const AboutSection = () => {
 
             <div className="text-box">
                 <p className="text">
-                    Unsere Mission ist es, die theoretischen Inhalte der handwerklichen Ausbildung
+                    Unsere Mission ist es, die theoretischen Inhalte der handwerklichen Ausbildung in Lern Apps 
                     anschaulich aufzubereiten und zeitgemäß zugänglich zu machen.
                 </p>
                 <p className="text">
@@ -24,7 +24,7 @@ const AboutSection = () => {
                     lassen.
                 </p>
                 <p className="text">
-                    Unsere Apps richten sich an Auszubildende im Beruf Anlagenmechaniker*in SHK
+                    Unsere Lern-Apps richten sich an Auszubildende im Beruf Anlagenmechaniker*in SHK
                     und werden künftig auch für weitere Handwerksberufe verfügbar sein.
                 </p>
                 <p className="text">

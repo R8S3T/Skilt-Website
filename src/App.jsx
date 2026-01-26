@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StartSection from "./components/StartSection";
-import SecondSection from "./components/SecondSection";
-import ThirdSection from "./components/ThirdSection";
 import TiktokSection from "./components/TiktokSection";
 import AboutSection from "./components/AboutSection";
+import AppsSection from "./components/AppsSection";
 import Footer from "./components/Footer";
 import Impressum from "./pages/Impressum";
 import AGB from "./pages/AGB";
@@ -22,8 +21,7 @@ const App = () => {
             element={
               <>
                 <StartSection />
-                <SecondSection />
-                <ThirdSection />
+                <AppsSection/>
                 <TiktokSection />
                 <AboutSection />
               </>

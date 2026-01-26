@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/DownloadTabs.css";
 
-const DownloadTabs = () => {
+const DownloadTabs = ({ filterKey }) => {
   const options = [
             {
         key: "trial",
@@ -35,11 +35,31 @@ const DownloadTabs = () => {
             },
         ],
         },
+        {
+            key: "formelguide",
+            label: "Jetzt erhältlich für 4,99 €",
+            badges: [
+                {
+                href: "https://apps.apple.com/us/app/formel-guide-shk/id6747951535",
+                src: "/images/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg",
+                alt: "App Store",
+                },
+                {
+                href: "https://play.google.com/store/apps/details?id=com.skilt.formelguideshk.neu&hl=de",
+                src: "/images/GetItOnGooglePlay_Badge_Web_color_German.png",
+                alt: "Google Play",
+                },
+            ],
+            },
     ];
+
+      const filteredOptions = filterKey
+    ? options.filter((o) => o.key === filterKey)
+    : options;
 
     return (
         <div className="download-tabs">
-        {options.map(({ key, label, badges }) => (
+        {filteredOptions.map(({ key, label, badges }) => (
             <div key={key} className="option-card">
             <div className="option-header">{label}</div>
             <div className="badges">

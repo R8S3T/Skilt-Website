@@ -82,6 +82,17 @@
     text-decoration: underline;
 }
 
+.webapp-frame {
+  width: 80%;
+  height: 100%;
+  min-height: 22rem; /* sorgt für sichtbare Höhe */
+  border: none;
+  border-radius: 1rem;
+  transform: scale(1.1);
+  transform-origin: top;
+}
+
+
 /* Styles for Tablet and Desktop Screens */
 @media (min-width: 768px) {
     .about-section {

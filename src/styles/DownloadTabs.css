@@ -5,7 +5,9 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
-        margin-top: 1.5rem;
+          align-items: start;          /* ← NEU */
+  justify-items: start; 
+        
     }
 
     /* Tab‐Buttons mobil: untereinander */
@@ -54,33 +56,37 @@
 
     /* Card‐Styles (falls du .option-card nutzt) */
     .option-card {
-        background: none;
-        border: 1.5px solid rgba(0, 0, 0, 0.15);
-        border-radius: 1rem;
-        padding: 1.5rem;
+    background: none;
+    border: none;              /* ← Rahmen weg */
+    border-radius: 0;
+
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: rem;
     }
 
     /* Card‐Überschrift */
         .option-header {
-        font-size: 1.25rem;
-        font-weight: 600;
+        font-size: 0.75rem; 
+        font-weight: 500;
         color: #2b4353;
+        padding-bottom: 0.5rem;
+         text-align: left;
+         padding-left: 1.5rem;
     }
 
     /* Badge‐Container */
         .badges {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 1rem;
-    }
+        padding-left: 1.5rem; /* optional – feine Ausrichtung */
+        }
 
     /* Einheitliche Badge‐Höhe */
     .badges img {
-        height: 48px;
+        height: 32px;
         width: auto;
         display: block;
         transition: transform 0.2s;
@@ -91,9 +97,7 @@
         transform: scale(1.05);
     }
 
-    .badges img[alt="Google Play"] {
-        height: 48px;
-    }
+   
     /* 2) Tablet & Desktop (ab 768px) — mehrspaltig */
     @media (min-width: 768px) {
     /* DownloadTabs: 2 Spalten (oder mehr, je nach Platz) */
@@ -114,5 +118,30 @@
         flex-wrap: wrap;
         gap: 1rem;
     }
+}
+
+@media (min-width: 768px) {
+  .option-header {
+    font-size: 1rem;        /* Überschrift größer */
+    font-weight: 600;
+    padding-left: 1rem;
+  }
+
+  .badges {
+    gap: 1.25rem;
+  }
+
+  .badges img {
+    height: 42px;           /* Badge-Höhe leicht vergrößert */
+    transition: transform 0.2s;
+  }
+
+  .badges a:hover img {
+    transform: scale(1.08);
+  }
+
+  .download-tabs {
+    gap: 2.5rem;
+  }
 }
 

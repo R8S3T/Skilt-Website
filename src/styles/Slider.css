@@ -60,7 +60,6 @@
 
 .slide-content {
     position: relative;
-    border: 2.5px solid #ececec;
     border-radius: 1rem;
     overflow: hidden;
     background: none;
@@ -68,7 +67,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 0.5rem;
 }
 
 .slider-image {
@@ -81,7 +80,7 @@
 .slide-text {
     margin-top: 0;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #2b4353;
     text-align: center;
@@ -101,7 +100,7 @@
 /* Tablet & Desktop: fixe Höhe */
 @media (min-width: 768px) {
     .slider {
-      height: 700px;
+      height: 800px;
       overflow: visible;
     }
     .slide-content {
@@ -129,7 +128,7 @@
     .slider-image {
       width: 100%;
       height: auto;
-      max-height: calc(80vh - 4rem);
+      max-height: 80vh;
       object-fit: contain;
       flex: 1 1 auto;
     }

@@ -1,0 +1,8 @@
+{
+  "display": "standalone",
+  "lang": "en",
+  "name": "skilt_gp1_demo_web",
+  "short_name": "skilt_gp1_demo_web",
+  "start_url": "/?utm_source=web_app_manifest",
+  "orientation": "portrait"
+}
