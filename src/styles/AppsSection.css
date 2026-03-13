@@ -4,10 +4,14 @@
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  padding: 10%;
+
   background-color: #2A3E5E;
 }
 
+.apps-stage {
+  position: relative;       /* Pfeile sollen sich auf Stage beziehen */
+  width: 100%;
+}
 /* Wrapper darf mobil keine Wirkung haben */
 .card-slider {
   display: contents; /* bewirkt: als gäbe es den Wrapper nicht */
@@ -19,211 +23,6 @@
 
 .slider-arrow{
   display: none;
-}
-
-/* Kartenfarben – Vorder- und Rückseite pro Karte identisch */
-.app-card:nth-child(odd) .card-front,
-.app-card:nth-child(odd) .card-back {
-  background-color: #ececec;
-}
-
-.app-card:nth-child(even) .card-front,
-.app-card:nth-child(even) .card-back {
-  background-color: #9fd3c7;
-}
-
-.app-card {
-  position: relative;
-  background: #ffffff;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  width: 100%;
-  max-width: 23.75rem; /* 380px */
-  aspect-ratio: 3 / 4;
-  height: auto;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 26rem;
-  perspective: 62.5rem; /* 1000px */
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-
-/* Wenn aktiv umgedreht */
-.app-card.flipped {
-  transform: rotateY(180deg);
-}
-
-/* Vorder- und Rückseite */
-.card-front,
-.card-back {
-  backface-visibility: hidden;
-  width: 100%;
-  border-radius: 1rem;
-}
-
-.card-front {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 4rem;
-  padding-bottom: 0.5rem;
-  gap: 0.75rem;
-}
-
-.card-back {
-  position: absolute;
-  inset: 0;
-  transform: rotateY(180deg);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  background: #b1ded6;
-  overflow: hidden;
-}
-
-/* Inhalte */
-.app-logo {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 3.125rem;  /* 50px */
-  height: 3.125rem; /* 50px */
-  object-fit: contain;
-}
-
-.app-hero h3 {
-  font-size: 1.3rem;
-  margin-top: 0;
-  color: #062c30;
-}
-.app-hero h4 {
-  font-size: 1rem;
-  color: #333;
-  margin-top: 0.3rem;
-}
-
-.card-front .app-hero,
-.card-front .app-description,
-.card-front .app-link {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.app-description {
-  margin-top: -1rem;
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.6;
-}
-
-.app-link {
-  margin-top: 1rem;
-  text-align: right;
-  color: #e8630a;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.highlight {
-  font-weight: 600;
-}
-
-/* Rückseite: Vorschau */
-.app-preview-container {
-  width: 58%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.25rem;
-  flex-direction: column;
-  padding-bottom: 7rem;
-}
-
-.app-preview-image {
-  display: block;
-  width: 100%;
-  max-width: 20rem;  /* 320px */
-  height: auto;
-}
-
-/* Rückseite: Call to action Jetzt testen */
-.img-cta{
-  position: absolute;
-  top: 90%;
-  right: 8rem;
-  transform: translate(50%, -38%);
-  z-index: 2;
-
-  padding: 1rem 1rem;
-  border: 0;
-  border-radius: 9999px;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: .2px;
-  min-width: 12rem; 
-  padding-inline: 1.6rem; 
-  white-space: nowrap;
-  text-align: center;
-  color: #fff;
-  background: rgba(232, 99, 10, 0.85);
-  backdrop-filter: blur(2px);
-  box-shadow: 0 10px 28px rgba(0,0,0,.22);
-  cursor: pointer;
-  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
-}
-
-.img-cta.small {
-  margin-bottom: -1rem;
-}
-
-
-@media (max-width: 360px){
-  .img-cta { min-width: 11rem; }
-}
-
-.img-cta:hover{
-  transform: translate(50%, -50%) scale(1.04);
-  box-shadow: 0 14px 36px rgba(0,0,0,.26);
-}
-.img-cta:focus-visible{
-  outline: 3px solid rgba(232,99,10,.35);
-  outline-offset: 3px;
-}
-@media (max-width: 480px){
-  .img-cta{
-    top: auto;
-    bottom: .75rem;
-    right: 50%;
-    transform: translate(50%, 0);
-    padding: .9rem 1.2rem;
-    font-size: 1rem;
-  }
-}
-
-/* Rückseite: Text verfügbarkeit */
-.app-caption {
-  margin-top: -0.5rem;
-  margin-bottom: 2rem;
-  font-size: 0.95rem;
-  line-height: 1.35;
-  color: #2a3e5e;
-  text-align: center;
-  opacity: 0.95;
-    max-width: none;              /* Breite an Zeichen orientiert */
-  margin-left: auto;
-  margin-right: auto;
-  padding-inline: 0.75rem;
-}
-
-@media (max-width: 30rem) {
-  .app-caption { font-size: 0.9rem; }
 }
 
 
@@ -250,54 +49,16 @@
   gap: 0.75rem;
 }
 
-@media (max-width: 30rem) {
-  .demo-modal { padding: 1.75rem; }    /* NOCH MEHR auf sehr klein */
-}
-
 .demo-frame {
-  width: min(26.25rem, 100vw - 3.5rem);
-  height: min(46.25rem, 100vh - 8rem);
-  border: 0;
-  border-radius: 0.75rem; /* 12px */
+  width: 100%;
+  height: 70vh;             /* nimmt 70 % der Bildschirmhöhe */
+  border: none;
+  border-radius: 0.75rem;
 }
-
-/* mehr Luft zur Kante bei sehr kleinen Displays */
-@media (max-width: 30rem) { /* ≤480px */
-  .app-preview-container { padding: 1.5rem; }
-}
-
-/* Größerer „Telefonrahmen“ auf sehr breiten Screens */
-@media (min-width: 87.5rem) { /* ≥1400px */
-  .demo-frame {
-    width: 30rem;     /* 480px */
-    height: 53.75rem; /* 860px */
-  }
-}
-
-.demo-close {
-  padding: 0.5rem 0.875rem; /* 8px 14px */
-  border: 1px solid #ddd;   /* 1px-Border bleibt px-akkurat */
-  border-radius: 0.625rem;  /* 10px */
-  background: #f7f7f7;
-  cursor: pointer;
-}
-
-
-/* Rückseite – erstes Card: Bild+Button etwas höher */
-.app-card:first-child .app-preview-container {
-  transform: translateY(-1rem);
-}
-
-@media (min-width: 48rem) {
-  .app-card:first-child .app-preview-container {
-    transform: translateY(-1.5rem);
-  }
-}
-
 
 @media (min-width: 48rem) { /* ab ca. 768px */
   .apps-section {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;;
     align-items: center;
     gap: 2rem;
@@ -317,48 +78,7 @@
     display: flex;
   }
 
-    .card-slider{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    gap: 2.5rem;
-
-    overflow: visible;     /* kein horizontales Scrollen */
-    padding-inline: 0;     /* kein Zusammendrücken durch Pfeil-Padding */
-    scroll-behavior: auto; /* optional, da kein Scroll */
-  }
-
-  .app-card{
-    flex: 0 0 42%;
-    max-width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    padding: clamp(2rem, 3vw, 3.5rem); /* vereinheitlicht */
-    border-radius: 1.5rem;
-    box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.1);
-
-    min-height: 32rem;
-    aspect-ratio: auto;
-  }
-
-    .app-link{
-    margin-top: auto; /* klebt unten */
-    font-size: clamp(1rem, 0.8vw + 0.8rem, 1.2rem);
-
-    text-align: right;
-    color: #e8630a;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  .card-front,
-  .card-back {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* verteilt Inhalt gleichmäßig */
-  }
-
+  
   .slider-arrow {
     display: flex;
     align-items: center;
@@ -384,70 +104,370 @@
   .slider-arrow-right {
     right: 2%;
   }
-
-  .app-hero h3 {
-    font-size: clamp(1.6rem, 2vw + 1rem, 2.2rem);
+  .apps-section {
+        margin-bottom: 0; /* entfernt den hellen Streifen */
+    padding-bottom: 4rem; 
   }
 
-  .app-hero h4 {
-    font-size: clamp(1.2rem, 1.5vw + 0.8rem, 1.6rem);
-  }
-
-  .app-description {
-    font-size: clamp(1rem, 1vw + 0.9rem, 1.25rem);
-    line-height: 1.75;
-  }
-
-
-  .highlight {
-    font-weight: 700;
-  }
-
-  .app-logo {
-  width: clamp(4rem, 5vw, 6rem);
-  height: auto;
-  top: 1.2rem;
-  right: 1.2rem;
-  }
-
-.app-preview-container {
-  width: 70%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.25rem;
-  flex-direction: column;
-  padding-bottom: 7rem;
-}
-
-.img-cta {
-  top: 85%;
-  right: 1rem;
-  z-index: 2;
-  align-self: center;
-  padding: 1rem 2rem;
-  border-radius: 9999px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #fff;
-  background: rgba(232, 99, 10, 0.9);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-  .img-cta.small {
-    top: 78%;
-  }
 
   .downloadtabs-skilt{
   margin-top: -1rem;   /* nach Bedarf: -0.5rem bis -1.5rem */
 }
 }
 
-  .app-description,
-app-hero h4,
-  .option-header {
-    color: #062c30;
+
+ /* ==== TEST-CARD ==== */
+.test-card-front,
+.test-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #9fd3c7;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+    position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+    position: absolute;
+  inset: 0; 
+}
+
+/* ==== TEST-CARD – identisch zu .app-card ==== */
+.test-card {
+  position: relative;
+  background: transparent;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+    margin-left: auto;
+  margin-right: auto;
+  width: 80%;          /* vorher 100% */
+  max-width: 20rem;    /* vorher 22.75rem */
+  aspect-ratio: 3 / 4;
+  height: auto;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 26rem;
+  perspective: 62.5rem;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.test-card-front { transform: rotateY(0deg); }
+.test-card-back { transform: rotateY(180deg); }
+/* Flip-Zustände anpassen */
+.test-card.flipped .test-card-front {
+  transform: rotateY(180deg);
+}
+
+.test-card.flipped .test-card-back {
+  transform: rotateY(0deg);
+}
+
+
+/* ---------- FRONT ---------- */
+.test-front-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left; 
+  padding: 2rem 2.5rem;
+  
+}
+
+.test-front-hero {
+  margin-top: 0.8rem; /* Abstand nach oben zum Rand */
+}
+
+
+.test-downloadtabs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Tabs linksbündig */
+  justify-content: flex-start;
+}
+
+.test-downloadtabs > * {
+  align-self: flex-start; /* zwingt alle Tabs auf linke Seite */
+}
+
+.test-front-footer {
+
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e8630a; 
+  font-weight: 700;
+}
+
+/* ---------- BACK ---------- */
+
+.test-card-back {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  background: #9fd3c7; /* Grundfarbe für ganze Rückseite */
+  overflow: hidden;
+}
+
+.test-back-body {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow: hidden;
+  min-height: 0;
+  background: transparent;
+  font-weight: 700;
+}
+
+.test-back-footer {
+  flex: 0 0 auto;
+  height: auto;
+  min-height: 12%;
+  max-height: 16%;
+  padding: 0.6rem 0.8rem;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.test-back-link {
+  background: transparent;
+  color: #e8630a;
+  border: 2px solid #e8630a;
+  border-radius: 9999px;        /* voll rund */
+  padding: 0.6rem 1.8rem;       /* länglich und etwas dicker */
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.test-back-link:hover {
+  background: #e8630a;
+  color: #fff;
+}
+
+
+/* ---------- LOGO ---------- */
+.test-front-logo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: clamp(4rem, 6vw, 6rem);
+  height: auto;
+}
+
+
+/* ---------- BACK IMAGE ---------- */
+.test-back-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+/* ==== Kartenfarben – Vorder- und Rückseite pro Test-Card identisch ==== */
+.test-card:nth-child(odd) .test-card-front,
+.test-card:nth-child(odd) .test-card-back {
+  background-color: #ececec;
+}
+
+.test-card:nth-child(even) .test-card-front,
+.test-card:nth-child(even) .test-card-back {
+  background-color: #9fd3c7;
+}
+
+
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 48rem) {
+  .test-card {
+    transform: scale(0.90); /* leicht verkleinert */
+    transform-origin: center top;
   }
+
+  .test-front-footer {
+    position: absolute;
+    bottom: 0.5rem;     /* etwas weiter nach unten */
+    right: 2rem;        /* nach rechts verschoben */
+    left: auto;
+    width: auto;
+    background: none;   /* kein oranger Balken */
+    color: #e8630a;     /* Text in Markenfarbe */
+    font-weight: 700;
+    text-align: right;
+    padding: 0;
+  }
+
+    .test-front-link {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+
+  .test-front-link:hover {
+    opacity: 0.8;
+  }
+
+  .test-front-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* oben ausrichten */
+    align-items: flex-start;
+    min-height: 22rem;            /* gleiche Höhe für alle Textbereiche */
+    padding-top: 3rem;            /* gleichmäßiger Abstand nach oben */
+  }
+
+    .test-front-hero {
+    margin-top: 0;                /* kein zusätzlicher Abstand */
+  }
+
+    .test-downloadtabs {
+    margin-top: -0.5rem;     /* Tabs etwas höher */
+    transform: scale(0.9);   /* leicht verkleinert */
+    transform-origin: left top;
+  }
+
+  .test-downloadtabs .tab-buttons button {
+    font-size: 0.95rem;      /* kleinere Schrift */
+    padding: 0.5rem 0.75rem; /* weniger Höhe */
+  }
+
+  .test-downloadtabs .option-header {
+    font-size: 0.85rem;      /* Kopfzeile kleiner */
+    padding-left: 1rem;
+  }
+
+  .test-downloadtabs .badges img {
+    height: 28px;            /* Icons kompakter */
+  }
+
+.demo-modal {
+  max-width: 430px;
+  height: 85vh;              /* fixe Höhe, kein Scrollen */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.demo-modal .slider-container {
+  height: 100%;              /* Slider dehnt sich auf verfügbare Höhe */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.95);    /* minimal verkleinert, damit alles passt */
+  transform-origin: center;
+}
+
+.demo-modal .slider,
+.demo-modal .slider-wrapper,
+.demo-modal .slider-slide {
+  max-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  .demo-close {
+    margin-top: 0.5rem;
+  }
+
+  .demo-frame {
+    height: 80vh;           /* auf Desktop größer */
+  }
+  
+
+.demo-modal img {
+  max-height: 80vh;             /* verhindert, dass Bild/Text über Rand gehen */
+  width: auto;
+  object-fit: contain;
+}
+}
+
+
+/* ---------- GROSSE DESKTOPS ---------- */
+@media (min-width: 1024px) {
+  .card-pair.active {
+    gap: 2rem; /* Karten näher zusammen */
+  }
+
+  .test-card {
+    max-width: 20rem;   /* vorher 20rem */
+    transform: scale(1.08); /* leicht größer */
+  }
+
+  .test-front-body {
+    padding: 2.5rem 2.75rem; /* Textbereich etwas großzügiger */
+  }
+
+  .test-front-footer {
+    font-size: 1.05rem;
+  }
+}
+
+
+
+.apps-header{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 1.25rem;
+
+  padding-left: 6vw;     /* mehr Space links */
+  padding-right: 1rem;
+  text-align: left;
+}
+
+.apps-title{
+  margin: 0;
+  font-size: clamp(1.8rem, 2.6vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ececec;
+}
+
+.apps-subtitle{
+  margin: 0.5rem 0 0;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.6;
+  color: rgba(15, 23, 42, 0.75);
+}
+
+.apps-divider {
+  height: 2px;
+  width: min(50%, 520px);
+  background: #ececec;
+  margin: 1.25rem 0 1.75rem 0;  /* oben + unten Abstand, linksbündig */
+  opacity: 0.9;
+}
+
+
+@media (min-width: 48rem){
+  .apps-header{
+    margin-top: 3rem; 
+    margin-bottom: 1.75rem;
+    padding: 0;
+  }
+}

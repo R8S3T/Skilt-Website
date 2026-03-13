@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StartSection from "./components/StartSection";
-import TiktokSection from "./components/TiktokSection";
+import TikTokSection from "./components/TikTokSection";
 import AboutSection from "./components/AboutSection";
 import AppsSection from "./components/AppsSection";
 import Footer from "./components/Footer";
@@ -22,7 +22,7 @@ const App = () => {
               <>
                 <StartSection />
                 <AppsSection/>
-                <TiktokSection />
+                <TikTokSection />
                 <AboutSection />
               </>
             }

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/gp1_demo/static/js/main.453035f1.js",
+    "main.js": "/gp1_demo/static/js/main.2baa39bd.js",
     "static/js/814.298d1838.js": "/gp1_demo/static/js/814.298d1838.js",
     "static/media/MaterialCommunityIcons.ttf": "/gp1_demo/static/media/MaterialCommunityIcons.1fcc36272ea3e53d0031.ttf",
     "static/media/Ionicons.ttf": "/gp1_demo/static/media/Ionicons.40518f95b2e2a69c5c07.ttf",
@@ -20,12 +20,12 @@
     "static/media/LF_3_Klemmverschraubung_truefalse.png": "/gp1_demo/static/media/LF_3_Klemmverschraubung_truefalse.9c231f42e73de0953b7a.png",
     "static/media/LF_3_Verschraubung.png": "/gp1_demo/static/media/LF_3_Verschraubung.a423bd9039ccd0339d9f.png",
     "static/media/LF3_Withworth_truefalse.png": "/gp1_demo/static/media/LF3_Withworth_truefalse.44803a3f1909a016af3c.png",
-    "static/media/skilt_GP1_logo.png": "/gp1_demo/static/media/skilt_GP1_logo.69020a2dc7a53f7b47ed.png",
     "static/media/LF_5_elektrochemische_Spannungsreihe_zoom.png": "/gp1_demo/static/media/LF_5_elektrochemische_Spannungsreihe_zoom.16698bdd4139d8fced72.png",
     "static/media/LF_Grundlagen_small.png": "/gp1_demo/static/media/LF_Grundlagen_small.68193c1bdf23a391b85d.png",
     "static/media/LF_1_Schlauchwaage.png": "/gp1_demo/static/media/LF_1_Schlauchwaage.5d4cceed19d1a9a01b6f.png",
     "static/media/intro_Trennen_Schleifen.png": "/gp1_demo/static/media/intro_Trennen_Schleifen.692f196aec83fb4b015e.png",
     "static/media/LF4_Schmelzsicherung_truefalse.png": "/gp1_demo/static/media/LF4_Schmelzsicherung_truefalse.8aab7a2ce4b1ddd1dcab.png",
+    "static/media/skilt_GP1_logo.png": "/gp1_demo/static/media/skilt_GP1_logo.08ea87a011c567d78542.png",
     "static/media/LF_3_Einschraubteil.png": "/gp1_demo/static/media/LF_3_Einschraubteil.aa5c1a000d3a2170015a.png",
     "static/media/LF_3_Verschraubung_konisch.png": "/gp1_demo/static/media/LF_3_Verschraubung_konisch.d858039a0a9d0f2faed7.png",
     "static/media/LF_3_Einlegeteil.png": "/gp1_demo/static/media/LF_3_Einlegeteil.0161c4ea0cebb9f948a8.png",
@@ -84,11 +84,11 @@
     "favicon-16.png": "/gp1_demo/favicon-16.png",
     "serve.json": "/gp1_demo/serve.json",
     "manifest.json": "/gp1_demo/manifest.json",
-    "main.453035f1.js.map": "/gp1_demo/static/js/main.453035f1.js.map",
+    "main.2baa39bd.js.map": "/gp1_demo/static/js/main.2baa39bd.js.map",
     "814.298d1838.js.map": "/gp1_demo/static/js/814.298d1838.js.map"
   },
   "entrypoints": [
     "static/js/814.298d1838.js",
-    "static/js/main.453035f1.js"
+    "static/js/main.2baa39bd.js"
   ]
 }

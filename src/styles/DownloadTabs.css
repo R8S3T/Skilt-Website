@@ -93,11 +93,17 @@
     }
 
     /* Hover‐Zoom */
-    .badges a:hover img {
-        transform: scale(1.05);
-    }
+  .badge-wrapper.disabled:hover img {
+    transform: none !important;
+  }
 
-   
+  .badge-note {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 0.25rem;
+    white-space: nowrap;  
+  }
+
     /* 2) Tablet & Desktop (ab 768px) — mehrspaltig */
     @media (min-width: 768px) {
     /* DownloadTabs: 2 Spalten (oder mehr, je nach Platz) */
@@ -145,3 +151,29 @@
   }
 }
 
+/* --- Links & Inhalte in Test-Cards linksbündig ausrichten --- */
+.test-downloadtabs .download-tabs,
+.test-downloadtabs .tab-buttons,
+.test-downloadtabs .links,
+.test-downloadtabs .option-card,
+.test-downloadtabs .option-header,
+.test-downloadtabs .badges {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+.test-downloadtabs .links a {
+  justify-content: flex-start !important;
+}
+
+.download-tabs,
+.tab-buttons button,
+.option-header {
+  color: #000 !important; /* Einheitlich schwarze Schrift */
+}
+
+.tab-buttons button {
+  border-color: rgba(0, 0, 0, 0.2);
+}

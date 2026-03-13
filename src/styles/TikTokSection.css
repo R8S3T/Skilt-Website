@@ -1,0 +1,263 @@
+/* Mobile first */
+.tiktok-section {
+  width: 100%;
+  padding: clamp(1.5rem, 4vw, 3.5rem) clamp(1rem, 4vw, 3rem);
+background-color: #ececec;  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.tiktok-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* mobile + hochformat: text oben, video unten */
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.tiktok-text {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.tiktok-headline {
+  margin: 0 0 0.9rem 0;
+  font-size: 1.8rem;     /* ähnlich about heading mobile */
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.tiktok-copy {
+  margin: 0;
+  font-size: 1rem;       /* ähnlich about text mobile */
+  line-height: 1.6;
+  opacity: 1;
+  text-align: left;
+}
+
+.tiktok-video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* TikTok Frame (9:16), begrenzt über Viewport-Höhe */
+.tiktok-videoFrame {
+  height: min(72vh, 640px);
+  width: calc(min(72vh, 640px) * 9 / 16);
+
+  max-width: 100%;
+  aspect-ratio: 9 / 16;
+
+  border-radius: 22px;
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Media im Slider */
+.tiktok-media {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.tiktok-linkSlide {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tiktok-cta {
+  margin-top: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  color: #e8630a;
+  border: 2px solid #e8630a;
+  border-radius: 9999px;
+  padding: 0.6rem 1.8rem;
+
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tiktok-cta:hover {
+  background: #e8630a;
+  color: #fff;
+}
+
+.tiktok-cta:focus-visible {
+  outline: 3px solid rgba(232, 99, 10, 0.35);
+  outline-offset: 4px;
+}
+
+
+
+@media (max-width: 520px) {
+  .tiktok-section {
+    padding: 1.25rem 1rem;
+  }
+
+  .tiktok-inner {
+    max-width: 420px;
+  }
+
+  .tiktok-headline {
+    font-size: 1.55rem;
+    line-height: 1.2;
+  }
+
+  .tiktok-copy {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+.tiktok-cta{
+  box-sizing: border-box;
+  max-width: 50%;
+  padding: 0.65rem 0.1rem;   /* etwas weniger seitlich */
+  white-space: normal;       /* darf umbrechen */
+  text-align: center;
+}
+
+  .tiktok-videoFrame {
+  height: min(48vh, 460px);
+  width: calc(min(48vh, 460px) * 9 / 16);
+    border-radius: 18px;
+  }
+
+  /* CTA unter das Video schieben (ohne JSX) */
+.tiktok-text { 
+  display: contents;
+}
+
+.tiktok-headline { 
+  order: 1;
+  max-width: 420px;
+  width: 100%;
+}
+
+.tiktok-copy { 
+  order: 2;
+  max-width: 420px;
+  width: 100%;
+}
+
+.tiktok-video { 
+  order: 3;
+}
+
+.tiktok-cta { 
+  order: 4;
+  max-width: 85%;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+}
+
+
+/* Tablet quer: links Text, rechts Video */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  .tiktok-inner {
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 420px);
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .tiktok-text {
+    max-width: 520px;
+  }
+
+  .tiktok-video {
+    justify-content: center; /* war flex-end */
+  }
+
+  .tiktok-videoFrame {
+    height: min(72vh, 520px);
+    width: calc(min(72vh, 520px) * 9 / 16);
+  }
+
+  /* Pfeile: mehr Abstand, aber weiterhin innerhalb (kein Abschneiden durch overflow) */
+  .tiktok-videoFrame .slider-nav.left {
+    left: 14px !important;
+  }
+
+  .tiktok-videoFrame .slider-nav.right {
+    right: 14px !important;
+  }
+}
+
+/* Laptop/Desktop: nebeneinander, kompakt ohne Scroll */
+@media (min-width: 1024px) {
+  .tiktok-section {
+    padding: 2.25rem 2.5rem 1.25rem;
+  }
+
+  .tiktok-inner {
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .tiktok-text {
+    max-width: 420px;
+  }
+
+  .tiktok-video {
+    justify-content: center; /* war flex-end -> zieht das Video optisch nach links */
+  }
+
+  .tiktok-videoFrame {
+    height: min(66vh, 560px);
+    width: calc(min(66vh, 560px) * 9 / 16);
+  }
+
+  /* Pfeile: mehr Abstand, aber weiterhin innerhalb (kein Abschneiden durch overflow) */
+  .tiktok-videoFrame .slider-nav.left {
+    left: 14px !important;
+  }
+
+  .tiktok-videoFrame .slider-nav.right {
+    right: 14px !important;
+  }
+  .tiktok-headline {
+    font-size: 3rem;     /* wie about heading desktop */
+    text-align: left;
+  }
+
+  .tiktok-copy {
+    font-size: 1.5rem;   /* wie about text desktop */
+    line-height: 1.6;
+  }
+
+}
+
+/* Sehr niedrige Laptop-Höhen */
+@media (max-height: 720px) and (min-width: 1024px) {
+  .tiktok-videoFrame {
+    height: min(62vh, 520px);
+    width: calc(min(62vh, 520px) * 9 / 16);
+  }
+}

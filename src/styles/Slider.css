@@ -99,19 +99,25 @@
 
 /* Tablet & Desktop: fixe Höhe */
 @media (min-width: 768px) {
-    .slider {
-      height: 800px;
-      overflow: visible;
-    }
-    .slide-content {
-        height: auto;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 1rem;
-        padding: 3;
-        margin: 0;
-        overflow: visible;
-    }
+  .slider {
+    max-width: 360px;
+    height: auto;            /* feste Höhe entfernen */
+    max-height: 85vh;        /* begrenzen statt fixieren */
+    overflow: hidden;        /* kein Überlaufen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide-content {
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
     .second-section .image-box {
       flex: 1;
       max-width: 40%;
@@ -128,14 +134,15 @@
     .slider-image {
       width: 100%;
       height: auto;
-      max-height: 80vh;
+      max-height: 75vh;  
       object-fit: contain;
       flex: 1 1 auto;
     }
-    .slide-text {
-      flex: 0 0 auto;
-      margin-top: 1rem;
-    }
+
+      .slide-text {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+  }
 
     .slider video {
       width: 100%;

@@ -6,33 +6,6 @@ import { skiltSlides, formelguideSlides } from "./skiltSlides";
 import DownloadTabs from "./DownloadTabs";
 
 const AppsSection = () => {
-  const apps = [
-    {
-      id: 1,
-      title: "SHK GP1",
-      subtitle: "Die Lernapp für deine Gesellenprüfung Teil 1",
-      logo: "/images/logo_gp1.png",
-    },
-    {
-      id: 2,
-      title: "Skilt Lernapp SHK",
-      subtitle: "Die Theorie-App für deine SHK-Ausbildung",
-      logo: "/images/Skilt_Lernapp_Logo.png",
-    },
-    {
-      id: 3,
-      title: "Formel Guide SHK",
-      subtitle: "Alle wichtigen Formeln für deine Ausbildung",
-      logo: "/images/formelguide_logo.png",
-    },
-    {
-      id: 4,
-      title: "SHK GP2",
-      subtitle: "Die Lernapp für deine Gesellenprüfung Teil 2",
-      logo: "/images/gp2_logo.png",
-    },
-  ];
-
   const [flippedIndex, setFlippedIndex] = useState(null);
 
   const handleFlip = (index) => {
@@ -59,6 +32,12 @@ const AppsSection = () => {
   return (
     <>
       <section className="apps-section">
+        <div className="apps-header">
+                    <div className="apps-divider" />
+          <h2 className="apps-title">Unsere Apps</h2>
+        </div>
+
+<div className="apps-stage">
         <button
           type="button"
           className="slider-arrow slider-arrow-left"
@@ -88,234 +67,244 @@ const AppsSection = () => {
         <div className="card-slider">
           {/* Pair 0: Cards 0 + 1 */}
           <div className={`card-pair ${pairStart === 0 ? "active" : ""}`}>
-            {apps.slice(0, 2).map((app, localIndex) => {
-              const index = localIndex; // 0 oder 1
-              return (
-                <div
-                  key={app.id}
-                  className={`app-card ${flippedIndex === index ? "flipped" : ""}`}
-                  onClick={() => {
-                    if (index !== 3) handleFlip(index);
-                  }}
-                >
-                  <div className="card-front">
-                    <img
-                      src={app.logo}
-                      alt={`${app.title} Logo`}
-                      className="app-logo"
-                    />
+            {/* Card 0 */}
+            <div
+              className={`test-card ${flippedIndex === 0 ? "flipped" : ""}`}
+              onClick={() => handleFlip(0)}
+            >
+              <div className="test-card-front">
+                <img
+                  src="/images/logo_gp1.png"
+                  alt="SHK GP1 Logo"
+                  className="test-front-logo"
+                />
 
-                    <div className="app-hero">
-                      <h3>{app.title}</h3>
-                      <h4>{app.subtitle}</h4>
+                <div className="test-front-body">
+                  <div className="test-front-hero">
+                    <h3>SHK GP1</h3>
+                    <h4>Die Lernapp für deine Gesellenprüfung Teil 1</h4>
+                  </div>
+                  <p className="test-front-text">
+                    Das Grundlagenmodul bietet dir über{" "}
+                    <strong style={{ fontWeight: "bold" }}>
+                      600 interaktive Quizze
+                    </strong>{" "}
+                    zum Wiederholen der Lernfelder 1–6. In der{" "}
+                    <strong style={{ fontWeight: "bold" }}>
+                      Prüfungssimulation
+                    </strong>{" "}
+                    kannst du dein Wissen anschließend mit{" "}
+                    <strong>300 prüfungsähnlichen Fragen</strong> testen.
+                    <br />
+                    <br />
+                    <div className="test-downloadtabs">
+                      <DownloadTabs filterKey="gp1" />
                     </div>
 
-                    {index === 0 ? (
-                      <p className="app-description">
-                        Wiederhole den Stoff aus den Lernfeldern 1–6
-                        <br />
-                        mit über{" "}
-                        <strong className="highlight">
-                          600 interaktiven Quizzen
-                        </strong>
-                        .
-                        <br />
-                        Prüfe dein Wissen mit insgesamt{" "}
-                        <strong className="highlight">
-                          300 prüfungsnahen Fragen
-                        </strong>
-                        .
-                        <br />
-                        Verfügbar Anfang Februar im App Store für einmalig
-                        12,99 €.
-                      </p>
-                    ) : index === 1 ? (
-                      <>
-                        <p className="app-description">
-                          Wir haben die <strong>Fachtheorie</strong> aus allen{" "}
-                          <strong>15 Lernfeldern</strong> verständlich
-                          aufbereitet und in eine App gepackt.
-                          <br />
-                        </p>
-                          {index === 1 && (
-                            <div className="downloadtabs-skilt">
-                              <DownloadTabs filterKey="buy" />
-                              <DownloadTabs filterKey="trial" />
-                            </div>
-                          )}
-                      </>
-                    ) : null}
-
-                    {index !== 3 && (
-                      <div className="app-link">
-                        {index === 0
-                          ? "Jetzt kostenlos testen →"
-                          : "Mehr Infos →"}
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="card-back">
-                    {index === 0 ? (
-                      <div className="app-preview-container">
-                        <img
-                          src="/images/GP1_Screenshot.png"
-                          alt="GP1 Vorschau"
-                          className="app-preview-image"
-                          style={
-                            isDesktop
-                              ? { width: 280, height: "auto" }               // DESKTOP kleiner
-                              : { width: "clamp(220px, 20vw, 340px)", height: "auto" } // MOBILE wie bisher
-                          }
-                        />
-                        <div style={{ height: "2rem" }} />
-                        <button
-                          className="img-cta"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setShowDemo(true);
-                          }}
-                        >
-                          Jetzt testen
-                        </button>
-                      </div>
-                    ) : index === 1 ? (
-                      <div
-                        className="app-preview-container"
-                        style={{ position: "relative" }}
-                      >
-                        <button
-                          className="img-cta small"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setShowSlider(true);
-                          }}
-                        >
-                          App-Vorschau
-                        </button>
-
-                        <img
-                          src="/images/skilt_screenshot.png"
-                          alt="Skilt Vorschau"
-                          className="app-preview-image"
-                          style={{
-                            width: "clamp(250px, 22vw, 340px)",
-                            height: "auto",
-                            marginTop: "-3rem"
-                          }}
-                        />
-                      </div>
-                    ) : (
-                      <p className="back-text">Weitere Infos folgen hier...</p>
-                    )}
+                  </p>
+                </div>
+                <div className="test-front-footer">
+                  <div className="test-front-link">
+                    Jetzt kostenlos testen →
                   </div>
                 </div>
-              );
-            })}
+              </div>
+
+              <div className="test-card-back">
+                <div className="test-back-body">
+                  <img
+                    src="/images/GP1_Screenshot.png"
+                    alt="GP1 Vorschau"
+                    className="test-back-image"
+                  />
+                </div>
+                <div
+                  className="test-back-footer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowDemo(true);
+                  }}
+                >
+                  <button className="test-back-link">Jetzt testen</button>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 1 */}
+            <div
+              className={`test-card ${flippedIndex === 1 ? "flipped" : ""}`}
+              onClick={() => handleFlip(1)}
+            >
+              <div className="test-card-front">
+                {/* Logo oben rechts */}
+                <img
+                  src="/images/Skilt_Lernapp_Logo.png"
+                  alt="Skilt Lernapp Logo"
+                  className="test-front-logo"
+                />
+
+                {/* Text mittig */}
+                <div className="test-front-body">
+                  <div className="test-front-hero">
+                    <h3>Skilt Lernapp SHK</h3>
+                    <h4>
+                      Die Lern-App für die Ausbildung Anlagenmechaniker*in SHK
+                    </h4>
+                  </div>
+                  <p className="test-front-text">
+                    Wir haben die <strong>Fachtheorie</strong> aus allen{" "}
+                    <strong>15 Lernfeldern</strong> verständlich aufbereitet und
+                    in eine App gepackt.
+                  </p>
+
+                  <div className="test-downloadtabs">
+                    <DownloadTabs filterKey="buy" />
+                    <DownloadTabs filterKey="trial" />
+                  </div>
+                </div>
+
+                {/* Footer unten */}
+                <div className="test-front-footer">
+                  <div className="test-front-link">Mehr Infos →</div>
+                </div>
+              </div>
+
+              <div className="test-card-back">
+                <div className="test-back-body">
+                  <img
+                    src="/images/skilt_screenshot.png"
+                    alt="Skilt Vorschau"
+                    className="test-back-image"
+                  />
+                </div>
+                <div
+                  className="test-back-footer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowSlider(true);
+                  }}
+                >
+                  <button className="test-back-link">App-Vorschau</button>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Pair 1: Cards 2 + 3 */}
           <div className={`card-pair ${pairStart === 2 ? "active" : ""}`}>
-            {apps.slice(2, 4).map((app, localIndex) => {
-              const index = localIndex + 2; // 2 oder 3
-              return (
-                <div
-                  key={app.id}
-                  className={`app-card ${flippedIndex === index ? "flipped" : ""}`}
-                  onClick={() => {
-                    if (index !== 3) handleFlip(index);
-                  }}
-                >
-                  <div className="card-front">
-                    <img
-                      src={app.logo}
-                      alt={`${app.title} Logo`}
-                      className="app-logo"
-                    />
+            {/* Card 2 */}
+            <div
+              className={`test-card ${flippedIndex === 2 ? "flipped" : ""}`}
+              onClick={() => handleFlip(2)}
+            >
+              <div className="test-card-front">
+                {/* Logo oben rechts */}
+                <img
+                  src="/images/formelguide_logo.png"
+                  alt="Formel Guide Logo"
+                  className="test-front-logo"
+                />
 
-                    <div className="app-hero">
-                      <h3>{app.title}</h3>
-                      <h4>{app.subtitle}</h4>
-                    </div>
-
-                    {index === 2 ? (
-                      <>
-                        <p className="app-description">
-                          Der Formel Guide SHK enthält über{" "}
-                          <strong>200 Formeln</strong> für die{" "}
-                          <strong>Gesellen- und Meisterprüfung</strong>.
-                          <br />
-                          Übersichtlich sortiert und schnell per Suchfunktion
-                          auffindbar.
-                        </p>
-                        {index === 2 && (
-                          <DownloadTabs filterKey="formelguide" />
-                        )}
-                      </>
-                    ) : index === 3 ? (
-                      <>
-                        <p className="app-description">
-                          Wir arbeiten gerade an der <strong>GP2-App</strong> – mit noch mehr Fragen,
-                          damit du <strong>bestens vorbereitet</strong> in die Abschlussprüfung gehst.
-                        </p>
-
-                        <p className="app-description">
-                          Voraussichtlich ab <strong>März 2026</strong> in den App Stores verfügbar.
-                        </p>
-                        <div style={{ height: "7.5rem" }} />
-                      </>
-                    ) : null}
-
-                    {index !== 3 && (
-                      <div className="app-link">
-                        {index === 0
-                          ? "Jetzt kostenlos testen →"
-                          : "Mehr Infos →"}
-                      </div>
-                    )}
+                {/* Text mittig */}
+                <div className="test-front-body">
+                  <div className="test-front-hero">
+                    <h3>Formel Guide SHK</h3>
+                    <h4>Alle wichtigen Formeln für deine Ausbildung</h4>
                   </div>
-
-                  <div className="card-back">
-                    {index === 2 ? (
-                      <div
-                        className="app-preview-container"
-                        style={{ position: "relative" }}
-                      >
-                        <button
-                          className="img-cta small"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setShowFormelSlider(true);
-                          }}
-                        >
-                          App-Vorschau
-                        </button>
-
-                        <img
-                          src="/images/formelguide_screenshot.png"
-                          alt="Formel Guide Vorschau"
-                          className="app-preview-image"
-                          style={{
-                            width: "clamp(220px, 20vw, 340px)",
-                            height: "auto",
-                          }}
-                        />
-                      </div>
-                    ) : (
-                      <p className="back-text">Weitere Infos folgen hier...</p>
-                    )}
+                  <p className="test-front-text">
+                    Der unserer digitale Formelsammlung enthält über{" "}
+                    <strong>200 Formeln</strong> für die{" "}
+                    <strong>Gesellen- und Meisterprüfung</strong>.<br />
+                    Übersichtlich sortiert und schnell per Suchfunktion
+                    auffindbar.
+                  </p>
+                  <div className="test-downloadtabs">
+                    <DownloadTabs filterKey="formelguide" />
                   </div>
                 </div>
-              );
-            })}
+
+                {/* Footer unten */}
+                <div className="test-front-footer">
+                  <div className="test-front-link">App-Vorschau →</div>
+                </div>
+              </div>
+
+              <div className="test-card-back">
+                <div className="test-back-body">
+                  <img
+                    src="/images/formelguide_screenshot.png"
+                    alt="Formel Guide Vorschau"
+                    className="test-back-image"
+                  />
+                </div>
+                <div
+                  className="test-back-footer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowFormelSlider(true);
+                  }}
+                >
+                  <button className="test-back-link">
+                    App-Vorschau starten
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="test-card">
+              <div className="test-card-front">
+                <img
+                  src="/images/gp2_logo.png"
+                  alt="GP2 Logo"
+                  className="test-front-logo"
+                />
+
+                <div className="test-front-body">
+                  <div className="test-front-hero">
+                    <h3>SHK GP2</h3>
+                    <h4>Die Lernapp für deine Gesellenprüfung Teil 2</h4>
+                  </div>
+                  <p className="test-front-text">
+                    Wir arbeiten auf Hochtouren an der <strong>GP2-App</strong>,
+                    um dich optimal auf die{" "}
+                    <strong>theoretische Abschlussprüfung</strong>{" "}
+                    vorzubereiten.
+                    <br />
+                    <br />
+                    <span style={{ fontWeight: "bold" }}>
+                      Voraussichtlich ab Anfang März 2026
+                    </span>{" "}
+                    in den App Stores verfügbar.
+                  </p>
+                </div>
+
+                <div className="test-front-footer"></div>
+              </div>
+
+              <div className="test-card-back">
+                <div className="test-back-body">
+                  <img
+                    src="/images/GP1_Screenshot.png"
+                    alt="GP1 Vorschau"
+                    className="test-back-image"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
         </div>
       </section>
 
       {showDemo && (
         <div className="demo-overlay" onClick={() => setShowDemo(false)}>
           <div className="demo-modal" onClick={(e) => e.stopPropagation()}>
-            <iframe className="demo-frame" src="/gp1_demo/index.html" title="GP1 Demo" />
+            <iframe
+              className="demo-frame"
+              src="/gp1_demo/index.html"
+              title="GP1 Demo"
+            />
             <button className="demo-close" onClick={() => setShowDemo(false)}>
               Demo-App schließen
             </button>
@@ -335,10 +324,16 @@ const AppsSection = () => {
       )}
 
       {showFormelSlider && (
-        <div className="demo-overlay" onClick={() => setShowFormelSlider(false)}>
+        <div
+          className="demo-overlay"
+          onClick={() => setShowFormelSlider(false)}
+        >
           <div className="demo-modal" onClick={(e) => e.stopPropagation()}>
             <Slider slides={formelguideSlides} autoplayInterval={4000} />
-            <button className="demo-close" onClick={() => setShowFormelSlider(false)}>
+            <button
+              className="demo-close"
+              onClick={() => setShowFormelSlider(false)}
+            >
               Vorschau schließen
             </button>
           </div>
