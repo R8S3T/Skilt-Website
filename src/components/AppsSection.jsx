@@ -37,29 +37,29 @@ const AppsSection = () => {
           <h2 className="apps-title">Unsere Apps</h2>
         </div>
 
-<div className="apps-stage">
+      <div className="apps-stage">
         <button
           type="button"
-          className="slider-arrow slider-arrow-left"
+          className={`slider-arrow slider-arrow-left ${pairStart === 0 ? "disabled" : ""}`}
           onClick={(e) => {
             e.stopPropagation();
+            if (pairStart === 0) return;
             setPairStart(0);
             setFlippedIndex(null);
           }}
-          aria-label="Zurück"
         >
           ‹
         </button>
 
         <button
           type="button"
-          className="slider-arrow slider-arrow-right"
+          className={`slider-arrow slider-arrow-right ${pairStart === 2 ? "disabled" : ""}`}
           onClick={(e) => {
             e.stopPropagation();
+            if (pairStart === 2) return;
             setPairStart(2);
             setFlippedIndex(null);
           }}
-          aria-label="Weiter"
         >
           ›
         </button>
@@ -266,17 +266,21 @@ const AppsSection = () => {
                     <h4>Die Lernapp für deine Gesellenprüfung Teil 2</h4>
                   </div>
                   <p className="test-front-text">
-                    Wir arbeiten auf Hochtouren an der <strong>GP2-App</strong>,
-                    um dich optimal auf die{" "}
-                    <strong>theoretische Abschlussprüfung</strong>{" "}
-                    vorzubereiten.
+                    Mit über <strong>1400 interaktiven Quizzen</strong> wiederholst du die Inhalte
+                    der Lernfelder 7–15 Schritt für Schritt.
                     <br />
                     <br />
-                    <span style={{ fontWeight: "bold" }}>
-                      Voraussichtlich ab Anfang März 2026
-                    </span>{" "}
-                    in den App Stores verfügbar.
+                    Im{" "}
+                    <strong style={{ fontWeight: "bold" }}>
+                      Prüfungsmodus
+                    </strong>{" "}
+                    testest du dein Wissen mit{" "}
+                    <strong>600 prüfungsnahen Fragen</strong>.
+                    <br />
                   </p>
+                  <div className="test-downloadtabs">
+                    <DownloadTabs filterKey="gp2" />
+                  </div>
                 </div>
 
                 <div className="test-front-footer"></div>

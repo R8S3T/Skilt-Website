@@ -68,6 +68,22 @@ const DownloadTabs = ({ filterKey }) => {
                 },
             ],
             },
+            {
+                key: "gp2",
+                label: "Jetzt erhältlich für 14,99 €",
+                badges: [
+                    {
+                    href: "https://apps.apple.com/de/app/skilt-shk-gp2/id6761331238",
+                    src: "/images/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg",
+                    alt: "App Store",
+                    },
+                    {
+                    href: "https://play.google.com/store/apps/details?id=DEIN_GP2_PACKAGE",
+                    src: "/images/GetItOnGooglePlay_Badge_Web_color_German.png",
+                    alt: "Google Play",
+                    },
+                ],
+            }
 
 ];
 

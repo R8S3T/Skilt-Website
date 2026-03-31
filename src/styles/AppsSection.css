@@ -25,6 +25,16 @@
   display: none;
 }
 
+.slider-arrow.disabled {
+  background-color: #bdbdbd;
+  cursor: default;
+  opacity: 0.6;
+}
+
+.slider-arrow.disabled:hover {
+  transform: none;
+}
+
 
 /* Overlay + Modal für „Webapp in Handyrahmen“ */
 .demo-overlay {
@@ -427,7 +437,9 @@
     font-size: 1.05rem;
   }
 }
-
+  .test-front-logo {
+    width: 4.5rem;
+  }
 
 
 .apps-header{
