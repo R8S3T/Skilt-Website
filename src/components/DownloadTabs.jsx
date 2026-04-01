@@ -78,7 +78,7 @@ const DownloadTabs = ({ filterKey }) => {
                     alt: "App Store",
                     },
                     {
-                    href: "https://play.google.com/store/apps/details?id=DEIN_GP2_PACKAGE",
+                    href: "https://play.google.com/store/apps/details?id=com.Skilt_GP2_SHK&hl=de&gl=DE",
                     src: "/images/GetItOnGooglePlay_Badge_Web_color_German.png",
                     alt: "Google Play",
                     },
