@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection";
 import AppsSection from "./components/AppsSection";
 import Footer from "./components/Footer";
 import Impressum from "./pages/Impressum";
+import Datenschutz from "./pages/Datenschutz";
 import AGB from "./pages/AGB";
 import ThankYouSection from "./pages/ThankYouSection";
 import ErrorPage from "./pages/ErrorPage";
@@ -28,6 +29,7 @@ const App = () => {
             }
           />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/agb" element={<AGB />} />
           <Route path="/danke" element={<ThankYouSection />} />
           <Route path="*" element={<ErrorPage />} />

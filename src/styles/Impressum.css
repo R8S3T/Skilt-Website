@@ -3,9 +3,9 @@
     background-color: #f2f2f2;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    height: 86vh; /* Subtract header and footer height */
+    align-items: flex-start;
+    padding: 1.5rem 1rem;
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
@@ -13,7 +13,8 @@
 .impressum-frame {
     border: 1px solid #385170;
     border-radius: 8px;
-    padding: 2rem;
+    padding: 1.5rem;
+    width: 100%;
     max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -21,7 +22,7 @@
 /* Text Styles */
 .impressum-text {
     color: #062c30;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
@@ -70,7 +71,28 @@
 /* Desktop-Specific Styles */
 @media (min-width: 768px) {
     .impressum-container {
-        padding: 1rem; /* Weniger Padding für größere Bildschirme */
-        height: calc(100vh - 180px);
+        padding: 2rem;
+    }
+
+    .impressum-frame {
+        padding: 2rem;
+    }
+
+    .impressum-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .impressum-container {
+        padding: 3rem;
+    }
+
+    .impressum-frame {
+        max-width: 700px;
+    }
+
+    .impressum-text {
+        font-size: 1.2rem;
     }
 }

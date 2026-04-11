@@ -1,0 +1,59 @@
+.ds-container {
+    background-color: #f2f2f2;
+    padding: 1.5rem 1rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.ds-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: #062c30;
+}
+
+.ds-heading {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #062c30;
+}
+
+.ds-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    color: #062c30;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .ds-container {
+        padding: 2rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .ds-title {
+        font-size: 1.8rem;
+    }
+
+    .ds-text {
+        font-size: 1.1rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .ds-container {
+        max-width: 800px;
+    }
+
+    .ds-title {
+        font-size: 2rem;
+    }
+
+    .ds-text {
+        font-size: 1.2rem;
+    }
+}
