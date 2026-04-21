@@ -12,7 +12,7 @@ const AppsSection = () => {
     setFlippedIndex(flippedIndex === index ? null : index);
   };
 
-  const [showDemo, setShowDemo] = useState(false);
+  const [activeDemo, setActiveDemo] = useState(null);
   const [showSlider, setShowSlider] = useState(false);
   const [showFormelSlider, setShowFormelSlider] = useState(false);
 
@@ -122,7 +122,7 @@ const AppsSection = () => {
                   className="test-back-footer"
                   onClick={(e) => {
                     e.stopPropagation();
-                    setShowDemo(true);
+                    setActiveDemo("gp1");
                   }}
                 >
                   <button className="test-back-link">Jetzt testen</button>
@@ -252,7 +252,10 @@ const AppsSection = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="test-card">
+            <div
+              className={`test-card ${flippedIndex === 3 ? "flipped" : ""}`}
+              onClick={() => handleFlip(3)}
+            >
               <div className="test-card-front">
                 <img
                   src="/images/gp2_logo.png"
@@ -277,22 +280,36 @@ const AppsSection = () => {
                     testest du dein Wissen mit{" "}
                     <strong>600 prüfungsnahen Fragen</strong>.
                     <br />
+                    <br />
+                    <div className="test-downloadtabs">
+                      <DownloadTabs filterKey="gp2" />
+                    </div>
                   </p>
-                  <div className="test-downloadtabs">
-                    <DownloadTabs filterKey="gp2" />
-                  </div>
                 </div>
 
-                <div className="test-front-footer"></div>
+                <div className="test-front-footer">
+                  <div className="test-front-link">
+                    Jetzt kostenlos testen →
+                  </div>
+                </div>
               </div>
 
               <div className="test-card-back">
                 <div className="test-back-body">
                   <img
-                    src="/images/GP1_Screenshot.png"
-                    alt="GP1 Vorschau"
+                    src="/images/GP2_Screenshot.png"
+                    alt="GP2 Vorschau"
                     className="test-back-image"
                   />
+                </div>
+                <div
+                  className="test-back-footer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setActiveDemo("gp2");
+                  }}
+                >
+                  <button className="test-back-link">Jetzt testen</button>
                 </div>
               </div>
             </div>
@@ -301,21 +318,22 @@ const AppsSection = () => {
         </div>
       </section>
 
-      {showDemo && (
-        <div className="demo-overlay" onClick={() => setShowDemo(false)}>
+      {activeDemo && (
+        <div className="demo-overlay" onClick={() => setActiveDemo(null)}>
           <div className="demo-modal" onClick={(e) => e.stopPropagation()}>
             <iframe
+              key={activeDemo}
               className="demo-frame"
-              src="/gp1_demo/index.html"
-              title="GP1 Demo"
+              src={activeDemo === "gp1" ? "/gp1_demo/index.html" : "/gp2_demo/index.html"}
+              title={activeDemo === "gp1" ? "GP1 Demo" : "GP2 Demo"}
             />
-            <button className="demo-close" onClick={() => setShowDemo(false)}>
+            <button className="demo-close" onClick={() => setActiveDemo(null)}>
               Demo-App schließen
             </button>
           </div>
         </div>
       )}
-
+            
       {showSlider && (
         <div className="demo-overlay" onClick={() => setShowSlider(false)}>
           <div className="demo-modal" onClick={(e) => e.stopPropagation()}>
