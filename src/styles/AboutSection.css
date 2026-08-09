@@ -82,6 +82,34 @@
     text-decoration: underline;
 }
 
+/* Gefördertes Projekt */
+
+.funding-project {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 2px solid #f2f2f2;
+}
+
+.funding-project h3 {
+    margin-top: 0;
+    color: #f2f2f2;
+}
+
+.funding-project .text {
+    color: #f2f2f2;
+}
+
+.funding-link {
+    color: #e8630a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.funding-link:hover {
+    text-decoration: underline;
+}
+
 .webapp-frame {
   width: 80%;
   height: 100%;

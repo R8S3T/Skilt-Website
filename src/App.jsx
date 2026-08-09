@@ -10,6 +10,7 @@ import Datenschutz from "./pages/Datenschutz";
 import AGB from "./pages/AGB";
 import ThankYouSection from "./pages/ThankYouSection";
 import ErrorPage from "./pages/ErrorPage";
+import Foerderung from "./pages/Foerderung";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/agb" element={<AGB />} />
           <Route path="/danke" element={<ThankYouSection />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/foerderung" element={<Foerderung />} />
         </Routes>
         {/* Footer */}
         <Footer />

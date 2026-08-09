@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/AboutSection.css";
+import { Link } from "react-router-dom";
 import NewsletterPopup from "../pages/Newsletter";
 
 const AboutSection = () => {
@@ -27,6 +28,21 @@ const AboutSection = () => {
                     Unsere Lern-Apps richten sich an Auszubildende im Beruf Anlagenmechaniker*in SHK
                     und werden künftig auch für weitere Handwerksberufe verfügbar sein.
                 </p>
+
+                <div className="funding-project">
+                    <h3>Gefördertes Projekt</h3>
+
+                    <p className="text">
+                        Wir entwickeln unser digitales Lernangebot weiter: Mit Unterstützung
+                        der Europäischen Union und des Landes Brandenburg entsteht eine neue
+                        Lernplattform für die handwerkliche Ausbildung.
+                    </p>
+
+                    <Link to="/foerderung" className="funding-link">
+                        Mehr über das geförderte Vorhaben →
+                    </Link>
+                </div>
+
                 <p className="text">
                     Du möchtest ein gemeinsames Projekt mit uns starten oder hast eine Idee
                     für eine Zusammenarbeit? Schreib uns gerne unter 

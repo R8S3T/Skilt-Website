@@ -28,6 +28,7 @@ const Footer = () => {
         <div className="footer-nav">
             <button onClick={handleStartClick} className="footer-link">Start</button>
             <a href="mailto:info@skilt.app" className="footer-link">Kontakt</a>
+            <a href="/foerderung" className="footer-link">Gefördertes Vorhaben</a>
             <a href="/impressum" className="footer-link">Impressum</a>
             <a href="/datenschutz" className="footer-link">Datenschutzerklärung</a>
             <a href="/agb" className="footer-link">AGBs</a>

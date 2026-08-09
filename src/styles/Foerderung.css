@@ -1,0 +1,49 @@
+/**src/styles/Foerderung.css*/
+
+.foerderung-page {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  color: #2a535f;
+}
+
+.foerderung-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.foerderung-content h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.foerderung-content h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.foerderung-content p {
+  margin-bottom: 20px;
+  color: #646363;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.foerderung-hinweis {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #ececec;
+}
+
+.foerderung-hinweis strong {
+  color: #2a535f;
+}
+
+.eu-logo {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
