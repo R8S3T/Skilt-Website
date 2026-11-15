@@ -34,7 +34,7 @@ const AppsSection = () => {
       <section className="apps-section">
         <div className="apps-header">
                     <div className="apps-divider" />
-          <h2 className="apps-title">Unsere Apps</h2>
+          <h2 className="apps-title">Unsere Einzelapps</h2>
         </div>
 
       <div className="apps-stage">

@@ -1,0 +1,335 @@
+/* Skilt Campus: App-Vorstellung direkt unter der Hero-Section */
+.campus-app {
+  --campus-navy: #2A3E5E;
+  --campus-text: #2b4353;
+  --campus-muted: #55616b;
+  --campus-orange: #e8630a;
+  --campus-orange-dark: #c95000;
+  --campus-teal: #9cd3d3;
+  background: #f4f6f8;
+  color: var(--campus-text);
+  padding: 4.5rem 6vw 5rem;
+  overflow: hidden;
+}
+
+.campus-app * { box-sizing: border-box; }
+
+.campus-app__inner {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+/* Kopf */
+.campus-app__intro {
+  max-width: 46rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.campus-app__eyebrow {
+  margin: 0 0 .8rem;
+  color: var(--campus-orange);
+  font-size: .85rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.campus-app__intro h2 {
+  margin: 0;
+  color: var(--campus-navy);
+  font-size: clamp(1.9rem, 4.2vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  text-wrap: balance;
+}
+
+.campus-app__lead {
+  margin: 1.25rem 0 0;
+  color: var(--campus-muted);
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height: 1.6;
+}
+
+/* Drei Spalten */
+.campus-app-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 3.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.campus-app-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.campus-app-col__phone {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 32rem;
+  margin: 0 0 1.75rem;
+}
+
+.campus-app-col__phone img {
+  display: block;
+  width: 13.5rem;
+  height: auto;
+  filter: drop-shadow(0 1.1rem 1.4rem rgb(42 62 94 / 22%));
+}
+
+.campus-app-col--center { position: relative; z-index: 1; }
+
+.campus-app-col--center .campus-app-col__phone img {
+  width: 16rem;
+  filter: drop-shadow(0 1.6rem 2rem rgb(42 62 94 / 30%));
+}
+
+.campus-app-col h3 {
+  margin: 0 0 1rem;
+  color: var(--campus-navy);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.campus-app-col__points {
+  display: grid;
+  gap: .65rem;
+  max-width: 19rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.campus-app-col__points li {
+  display: grid;
+  grid-template-columns: 1.4rem 1fr;
+  gap: .55rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.campus-app-col__points svg {
+  margin-top: .3rem;
+  color: var(--campus-orange);
+  font-size: .9rem;
+}
+
+.campus-app__swipe-hint { display: none; }
+
+/* Leiste "Immer wissen, wo du stehst" */
+.campus-app-progress {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 52rem;
+  margin: 3.5rem auto 0;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  background: var(--campus-navy);
+  color: #fff;
+}
+
+.campus-app-progress__icon {
+  display: grid;
+  flex: none;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--campus-teal);
+  color: var(--campus-navy);
+  font-size: 1.3rem;
+}
+
+.campus-app-progress h3 {
+  margin: 0 0 .3rem;
+  font-size: 1.15rem;
+}
+
+.campus-app-progress p {
+  margin: 0;
+  color: rgb(255 255 255 / 88%);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.campus-app__note {
+  margin: 1.75rem auto 0;
+  color: var(--campus-muted);
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Zwei Buttons */
+.campus-app-choice {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 15rem));
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.campus-app-choice__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.4rem;
+  padding: .9rem 1.25rem;
+  border: 2px solid var(--campus-orange);
+  border-radius: .75rem;
+  background: var(--campus-orange);
+  color: #fff;
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .2s, border-color .2s, color .2s;
+}
+
+.campus-app-choice__button:hover {
+  border-color: var(--campus-orange-dark);
+  background: var(--campus-orange-dark);
+}
+
+.campus-app-choice__button.is-active {
+  background: #fff;
+  color: var(--campus-orange-dark);
+}
+
+.campus-app-choice__button:focus-visible,
+.campus-app-store:focus-visible {
+  outline: 3px solid var(--campus-teal);
+  outline-offset: 3px;
+}
+
+/* Bereich "Für Azubis" */
+.campus-app-azubi {
+  max-width: 31rem;
+  margin: 1.25rem auto 0;
+  padding: 1.75rem 1.5rem;
+  border: 2px solid var(--campus-orange);
+  border-radius: 1rem;
+  background: #fff;
+  text-align: center;
+  animation: campus-app-fade .25s ease-out;
+}
+
+.campus-app-azubi h3 {
+  margin: 0;
+  color: var(--campus-navy);
+  font-size: 1.5rem;
+}
+
+.campus-app-azubi__price {
+  margin: .5rem 0 0;
+  color: var(--campus-navy);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.campus-app-azubi__stores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .9rem;
+  margin-top: 1.35rem;
+}
+
+.campus-app-store {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;
+}
+
+.campus-app-store img {
+  display: block;
+  width: auto;
+  height: 2.9rem;
+}
+
+.campus-app-store--soon img { opacity: .45; }
+
+.campus-app-store--soon small {
+  color: var(--campus-muted);
+  font-size: .8rem;
+}
+
+@keyframes campus-app-fade {
+  from { opacity: 0; transform: translateY(-.4rem); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Tablet: etwas kleinere Handys */
+@media (max-width: 62rem) {
+  .campus-app-col__phone { height: 26rem; }
+  .campus-app-col__phone img { width: 11rem; }
+  .campus-app-col--center .campus-app-col__phone img { width: 13rem; }
+}
+
+/* Handy: Spalten zum Wischen */
+@media (max-width: 48rem) {
+  .campus-app { padding: 3.5rem 0 4rem; }
+  .campus-app__intro,
+  .campus-app-progress,
+  .campus-app__note,
+  .campus-app-choice,
+  .campus-app-azubi { margin-left: 1.25rem; margin-right: 1.25rem; }
+
+  .campus-app-columns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    padding: 0 1.25rem .5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 1.25rem;
+    scrollbar-width: none;
+  }
+
+  .campus-app-columns::-webkit-scrollbar { display: none; }
+
+  .campus-app-col {
+    flex: 0 0 82%;
+    padding: 1.5rem 1.25rem 1.75rem;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 .4rem 1.2rem rgb(42 62 94 / 8%);
+    scroll-snap-align: start;
+  }
+
+  .campus-app-col__phone { height: auto; margin-bottom: 1.25rem; }
+  .campus-app-col__phone img,
+  .campus-app-col--center .campus-app-col__phone img { width: 11.5rem; }
+
+  .campus-app__swipe-hint {
+    display: block;
+    margin: .5rem 1.25rem 0;
+    color: var(--campus-muted);
+    font-size: .85rem;
+    text-align: right;
+  }
+
+  .campus-app-progress {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .9rem;
+    margin-top: 2.5rem;
+  }
+
+  .campus-app-choice { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .campus-app-azubi { animation: none; }
+}

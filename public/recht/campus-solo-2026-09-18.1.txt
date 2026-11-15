@@ -1,0 +1,104 @@
+# Skilt Campus Solo
+
+Version 2026-09-18.1 · Stand 18.09.2026
+
+## 1. Anbieter und Geltungsbereich
+
+Anbieter ist die Skilt Technical UG (haftungsbeschränkt), Gubener Str. 36A, 03149 Forst (Lausitz), vertreten durch die Geschäftsführerin Rebecca Stelter. E-Mail: info@skilt.app.
+
+Skilt Campus Solo richtet sich an einzelne Azubis, die unabhängig von einem Betrieb lernen. Diese Bedingungen gelten nicht für Campus Team oder die Skilt-Ausbildungs-Apps mit Einmalkauf.
+
+## 2. Leistung und Konto
+
+Solo umfasst den in der Produktbeschreibung angegebenen persönlichen Lernzugang. Ein Verwaltungszugang für Organisationen und alte betriebliche Aufgaben, Gruppen oder fremde Lernstände sind nicht enthalten.
+
+Für die Nutzung ist ein persönliches Skilt-Konto erforderlich. Zugangsdaten dürfen nicht geteilt werden. Online-Funktionen, Anmeldung und Synchronisierung benötigen eine Verbindung. Ein gespeicherter Offline-Zugang gilt nur bis zum bestätigten Ablauf seiner Berechtigung.
+
+## 3. Abschluss, Test und Preis
+
+Der App-Download ist kostenlos. Das Solo-Abonnement wird in der App über Apple App Store oder Google Play gebucht. Im Euro-Angebot beträgt der Preis 4,99 € monatlich einschließlich Mehrwertsteuer. Das konkrete Angebot und der Zahlungstermin werden vor der verbindlichen Bestätigung angezeigt.
+
+Berechtigte Neukunden erhalten sieben kostenlose Testtage. Die Verfügbarkeit prüft der jeweilige Store. Ohne rechtzeitige Kündigung beginnt danach das kostenpflichtige Monatsabo. Ohne Testberechtigung wird der sofortige kostenpflichtige Beginn vor Abschluss angezeigt.
+
+Minderjährige benötigen die gesetzlich erforderliche Zustimmung ihrer Vertretung. Ein eigener kostenpflichtiger Solo-Abschluss wird erst nach der hierfür vorgesehenen Freigabe ermöglicht; eine betriebliche Einladung ist keine Zustimmung zum privaten Kauf.
+
+## 4. Verlängerung und Kündigung
+
+Das Abo verlängert sich automatisch um jeweils einen Monat. Die Verlängerung kann über die Abonnementverwaltung des ursprünglichen Stores beendet werden. Bereits bezahlter Zugang bleibt grundsätzlich bis zum Ende des bezahlten Zeitraums erhalten. Es gibt keine zusätzliche einmonatige Kündigungsfrist. Günstigere zwingende Rechte und Store-Regeln bleiben unberührt.
+
+Ein kostenloser Apple-Test ist mindestens 24 Stunden vor Ablauf zu kündigen, um eine erste Zahlung zu vermeiden; bei Google vor dem angezeigten Testende. Die maßgeblichen Termine werden im Store angezeigt. Ein kostenloser Test kann nach den Store-Regeln bei Kündigung vorzeitig enden.
+
+Deinstallation oder Löschung des Skilt-Kontos beendet ein Store-Abonnement nicht automatisch. Kündige es zusätzlich beim ursprünglichen Store.
+
+## 5. Wiederherstellung und Betriebslizenz
+
+Ein Kauf kann über die vorgesehene Funktion geprüft und dem zugehörigen Skilt-Konto wieder zugeordnet werden. Eine Übertragung auf ein anderes Skilt-Konto ist dadurch nicht vorgesehen.
+
+Mit einer gültigen Betriebslizenz ist für den darüber abgedeckten Lernzugang kein zusätzliches Solo-Abo erforderlich. Ein bereits vorhandenes Solo-Abo wird bei Eintritt in einen Betrieb nicht automatisch gekündigt und muss im ursprünglichen Store verwaltet werden.
+
+## 6. Zugangsende und Datenschutzrechte
+
+Nach Ablauf des Abos endet der kostenpflichtige Lernzugang. Kontoaufbewahrung und Datenlöschung richten sich nach einem gegebenenfalls verbleibenden Nutzungsverhältnis und den Datenschutzhinweisen. Kündigung ist kein Kontolöschauftrag. Datenschutzrechte bleiben auch nach Zugangssperre ausübbar.
+
+## 7. Nutzung und Schutz der Inhalte
+
+Die App unterstützt die Ausbildung. Ein bestimmter Prüfungs- oder Ausbildungserfolg wird nicht zugesichert. Gesetzliche Rechte bei fehlerhaften Leistungen bleiben unberührt.
+
+Die vereinbarte Lizenz gewährt ein einfaches Nutzungsrecht im beschriebenen Umfang. Inhalte dürfen nur innerhalb der angebotenen Funktionen, der vereinbarten Nutzungsrechte und gesetzlicher Befugnisse verwendet werden. Unberechtigte Veröffentlichung, Weiterverkauf und Umgehung von Schutzmaßnahmen sind untersagt. Eigene Inhalte bleiben dem jeweiligen Rechteinhaber zugeordnet; Skilt darf sie nur im für die Vertragserfüllung erforderlichen Umfang verarbeiten.
+
+## 8. Technische Voraussetzungen, Aktualisierungen und Support
+
+Die unterstützten Betriebssysteme und erforderlichen technischen Voraussetzungen werden in der Produktbeschreibung angegeben. Erforderliche Aktualisierungen einschließlich Sicherheitsaktualisierungen werden während des gesetzlich maßgeblichen Zeitraums bereitgestellt. Über ihre Bereitstellung und erforderliche Mitwirkung wird informiert.
+
+Support ist unter info@skilt.app erreichbar. Eine Rund-um-die-Uhr-Bereitschaft wird nicht vereinbart. Geplante Wartung wird soweit möglich angekündigt. Gesetzliche Rechte bei Ausfällen und sonstigen Leistungsstörungen bleiben bestehen.
+
+## 9. Mängelrechte und Haftung
+
+Es gelten die gesetzlichen Mängelrechte.
+
+Skilt haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit, bei Verletzung von Leben, Körper oder Gesundheit, nach dem Produkthaftungsgesetz sowie im Umfang einer übernommenen Garantie. Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten ist die Haftung auf den vorhersehbaren, vertragstypischen Schaden begrenzt. Wesentliche Pflichten sind solche, deren Erfüllung die ordnungsgemäße Vertragsdurchführung ermöglicht und auf deren Einhaltung der Kunde regelmäßig vertrauen darf. Im Übrigen ist die Haftung für leichte Fahrlässigkeit ausgeschlossen. Zwingende gesetzliche Haftung bleibt unberührt.
+
+## 10. Datenschutz und Vertragsänderungen
+
+Die Verarbeitung personenbezogener Daten wird in den zum Angebot gehörenden Datenschutzhinweisen erläutert. Die Annahme dieser Bedingungen ist keine Einwilligung in zusätzliche Datenverarbeitungen.
+
+Für den Vertrag gilt die bei Abschluss vereinbarte Fassung. Änderungen bestehender Verträge erfolgen durch Vereinbarung oder auf gesetzlicher Grundlage. Schweigen auf eine Änderungsmitteilung gilt nicht allein als Zustimmung. Individuelle Vereinbarungen haben Vorrang.
+
+## 11. Anwendbares Recht und Streitbeilegung
+
+Es gilt deutsches Recht. Zwingender Verbraucherschutz des Staates des gewöhnlichen Aufenthalts bleibt anwendbar, soweit gesetzlich vorgesehen. Bei Unwirksamkeit einer Bestimmung gelten an ihrer Stelle die gesetzlichen Regeln; der übrige Vertrag bleibt bestehen.
+
+Skilt ist nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Eine gesetzliche Verpflichtung bleibt unberührt.
+
+## 12. Käufe über Apple und Google
+
+Bei Store-Käufen ergeben sich Verkäufer, Zahlungsabwicklung und der Widerruf des Store-Kaufvertrags aus der Bestellung, dem Kaufbeleg und den Bedingungen des jeweiligen Stores. Für die App-Leistung bleibt Skilt im Rahmen des mit Skilt bestehenden Vertrags verantwortlich. Gesetzliche Ansprüche gegen Skilt werden durch den Store-Kauf nicht ausgeschlossen.
+
+Apple erläutert den Widerruf in seinen deutschen Apple Media Services-Bedingungen und bietet ihn in der Kaufhistorie an: https://www.apple.com/legal/internet-services/itunes/de/terms.html. Google erläutert Widerruf und Erstattung in den Google Play-Bedingungen: https://play.google.com/intl/ALL_de/about/play-terms/. Die bloße Deinstallation ist weder eine Kündigung noch eine Widerrufserklärung.
+
+Die nachfolgende Belehrung gilt für einen direkt mit Skilt geschlossenen Verbrauchervertrag. Für den gesonderten Store-Kaufvertrag gilt die Belehrung des dort angegebenen Verkäufers. Ein kostenloser Test ersetzt keine Widerrufsbelehrung.
+
+## 13. Widerrufsbelehrung für direkt mit Skilt geschlossene Verbraucherverträge
+
+Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Frist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.
+
+Um Ihr Widerrufsrecht auszuüben, müssen Sie uns, Skilt Technical UG (haftungsbeschränkt), Gubener Str. 36A, 03149 Forst (Lausitz), E-Mail: info@skilt.app, mittels einer eindeutigen Erklärung, beispielsweise per Brief oder E-Mail, über Ihren Entschluss informieren. Sie können das folgende Muster verwenden, müssen dies aber nicht. Zur Fristwahrung genügt die rechtzeitige Absendung der Erklärung.
+
+Wenn Sie diesen Vertrag widerrufen, erstatten wir Ihnen alle von Ihnen erhaltenen Zahlungen einschließlich der Lieferkosten, ausgenommen Mehrkosten einer von Ihnen gewählten anderen als der günstigsten angebotenen Standardlieferung, unverzüglich und spätestens binnen vierzehn Tagen nach Eingang Ihres Widerrufs. Für die Erstattung verwenden wir dasselbe Zahlungsmittel wie bei der ursprünglichen Zahlung, sofern nichts anderes ausdrücklich vereinbart wurde. Ihnen entstehen dadurch keine Erstattungsentgelte.
+
+Bei entgeltlichen digitalen Inhalten, die nicht auf einem körperlichen Datenträger geliefert werden, erlischt das Widerrufsrecht nur unter den gesetzlichen Voraussetzungen: Beginn der Vertragserfüllung nach Ihrer ausdrücklichen Zustimmung zum vorzeitigen Beginn, Ihrer Bestätigung der Kenntnis des damit verbundenen Rechtsverlusts und Bereitstellung der gesetzlich erforderlichen Vertragsbestätigung. Eine bloße Freischaltung oder Code-Einlösung genügt hierfür nicht.
+
+Bei Dienstleistungen führt der bloße Leistungsbeginn nicht zum Erlöschen des Widerrufsrechts. Haben Sie ausdrücklich den Beginn während der Widerrufsfrist verlangt und wurden ordnungsgemäß belehrt, kann gesetzlicher anteiliger Wertersatz für bis zum Widerruf erbrachte Leistungen anfallen. Das Recht erlischt bei vollständiger Leistungserbringung nur unter den weiteren gesetzlichen Voraussetzungen.
+
+## 14. Muster-Widerrufsformular
+
+An Skilt Technical UG (haftungsbeschränkt), Gubener Str. 36A, 03149 Forst (Lausitz), info@skilt.app.
+
+Hiermit widerrufe(n) ich/wir den von mir/uns abgeschlossenen Vertrag über: …
+Bestellt am: …
+Name: …
+Anschrift: …
+Bestell- oder Vertragsnummer, soweit vorhanden: …
+Datum: …
+Unterschrift nur bei Mitteilung auf Papier: …
+
