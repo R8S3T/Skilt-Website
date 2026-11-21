@@ -57,3 +57,7 @@
         font-size: 1.2rem;
     }
 }
+/* Lange Adressen auf dem Handy umbrechen */
+.ds-links a {
+    overflow-wrap: anywhere;
+}

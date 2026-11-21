@@ -17,3 +17,29 @@ export const TEAM_CTA = {
     "mailto:info@skilt.app?subject=" +
     encodeURIComponent("Testzugang Skilt Campus Team"),
 };
+
+// Gültige Nutzungsbedingungen liegen auf campus.skilt.app (dieselben, die App und Stores verlinken).
+// Reihenfolge = Reihenfolge auf /agb. "kind" ist auch der alte Pfad /agb/<kind>, der weiterleitet.
+export const CAMPUS_TERMS = [
+  {
+    kind: "ausbildungs-apps",
+    title: "Skilt Ausbildungs-Apps – Einmalkauf und Lizenzversionen",
+    url: "https://campus.skilt.app/agb/ausbildungs-apps",
+  },
+  {
+    kind: "campus-solo",
+    title: "Skilt Campus Solo",
+    url: "https://campus.skilt.app/agb/campus-solo",
+  },
+  {
+    kind: "campus-team",
+    title: "Skilt Campus Team",
+    url: "https://campus.skilt.app/agb/campus-team",
+  },
+];
+
+// Datenschutzhinweise der App Skilt Campus (verlinkt in der Datenschutzerklärung der Webseite).
+export const CAMPUS_PRIVACY = {
+  solo: "https://campus.skilt.app/datenschutzhinweise/campus-solo",
+  team: "https://campus.skilt.app/datenschutzhinweise",
+};
