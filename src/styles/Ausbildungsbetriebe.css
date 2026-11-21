@@ -12,8 +12,9 @@
 
 .team-page * { box-sizing: border-box; }
 
+/* Inhaltsbreite der Seite: 68rem ≈ 1090 px */
 .team-inner {
-  max-width: 64rem;
+  max-width: 68rem;
   margin: 0 auto;
 }
 
@@ -50,8 +51,56 @@
   line-height: 1.6;
 }
 
-/* Drei Blöcke, abwechselnd Bild links/rechts */
-.team-blocks { padding: 4.5rem 6vw 4rem; }
+.team-blocks { padding: 6rem 6vw 5.5rem; }
+
+/* Padding liegt hier innen, deshalb dazurechnen, damit die volle Inhaltsbreite bleibt */
+.team-blocks.team-inner { max-width: calc(68rem + 12vw); }
+
+/* Aktuell: drei Karten nebeneinander mit großem Symbol */
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-card {
+  padding: 2.75rem 2rem 2.5rem;
+  border: 1px solid rgb(42 62 94 / 8%);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 .4rem 1.2rem rgb(42 62 94 / 8%);
+  text-align: center;
+}
+
+.team-card__icon {
+  display: inline-grid;
+  width: 6.5rem;
+  height: 6.5rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #eef7f7;
+  color: var(--team-navy);
+  font-size: 3rem;
+}
+
+.team-card h2 {
+  margin: 1.5rem 0 .75rem;
+  color: var(--team-navy);
+  font-size: clamp(1.45rem, 2.2vw, 1.75rem);
+  line-height: 1.25;
+}
+
+.team-card p {
+  margin: 0;
+  color: var(--team-muted);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Später (SHOW_SCREENSHOTS = true): drei Blöcke, abwechselnd Bild links/rechts */
 
 .team-block {
   display: grid;
@@ -71,28 +120,7 @@
   box-shadow: 0 .8rem 2rem rgb(42 62 94 / 14%);
 }
 
-.team-block__placeholder {
-  display: flex;
-  aspect-ratio: 4 / 3;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: .9rem;
-  border: 2px dashed rgb(42 62 94 / 18%);
-  border-radius: 1rem;
-  background: #f4f6f8;
-  color: var(--team-navy);
-}
-
-.team-block__placeholder svg {
-  font-size: 3.5rem;
-  opacity: .8;
-}
-
-.team-block__placeholder span {
-  color: var(--team-muted);
-  font-size: .85rem;
-}
+.team-block__visual { text-align: center; }
 
 .team-block__text h2 {
   margin: 0 0 .75rem;
@@ -104,81 +132,39 @@
 .team-block__text p {
   margin: 0;
   color: var(--team-muted);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.65;
 }
 
 .team-note {
-  max-width: 46rem;
-  margin: 4rem auto 0;
-  padding: 1.25rem 1.5rem;
+  max-width: 56rem;
+  margin: 5rem auto 0;
+  padding: 1.5rem 1.75rem;
   border-left: 4px solid var(--team-teal);
   border-radius: .5rem;
   background: #eef7f7;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
-/* So funktioniert's */
-.team-steps {
-  padding: 4rem 6vw;
+/* Abschluss, grau abgesetzt vom weißen Kartenbereich */
+.team-cta {
+  padding: 6rem 6vw 6.5rem;
   background: #f4f6f8;
   text-align: center;
 }
 
-.team-steps h2,
 .team-cta h2 {
   margin: 0;
   color: var(--team-navy);
   font-size: clamp(1.7rem, 3vw, 2.4rem);
 }
 
-.team-steps__list {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-  margin: 2.5rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.team-steps__list li {
-  padding: 1.75rem 1.25rem;
-  border-radius: 1rem;
-  background: #fff;
-  box-shadow: 0 .4rem 1.2rem rgb(42 62 94 / 8%);
-}
-
-.team-steps__number {
-  display: inline-grid;
-  width: 2.75rem;
-  height: 2.75rem;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--team-orange);
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 800;
-}
-
-.team-steps__list p {
-  margin: 1rem 0 0;
-  font-size: 1.05rem;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-/* Abschluss */
-.team-cta {
-  padding: 4.5rem 6vw 5rem;
-  text-align: center;
-}
-
 .team-cta p {
-  max-width: 38rem;
-  margin: 1rem auto 0;
+  max-width: 42rem;
+  margin: 1.25rem auto 0;
   color: var(--team-muted);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
@@ -188,7 +174,9 @@
 }
 
 .team-cta .team-cta__price {
-  font-size: .95rem;
+  color: var(--team-text);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .team-cta__button {
@@ -215,12 +203,16 @@
 /* Handy */
 @media (max-width: 48rem) {
   .team-hero { padding: 2rem 1.25rem 3.5rem; }
-  .team-blocks { padding: 3rem 1.25rem; }
+  .team-blocks { padding: 3.5rem 1.25rem; }
+  .team-cards { grid-template-columns: 1fr; gap: 1.25rem; }
+  .team-card { padding: 2rem 1.5rem; }
+  .team-card p,
+  .team-note,
+  .team-cta p,
+  .team-cta .team-cta__price { font-size: 1.1rem; }
   .team-block { grid-template-columns: 1fr; gap: 1.25rem; }
   .team-block + .team-block { margin-top: 2.75rem; }
   .team-block:nth-of-type(even) .team-block__visual { order: 0; }
-  .team-note { margin-top: 3rem; }
-  .team-steps { padding: 3rem 1.25rem; }
-  .team-steps__list { grid-template-columns: 1fr; gap: 1rem; }
-  .team-cta { padding: 3.5rem 1.25rem 4rem; }
+  .team-note { margin-top: 3.5rem; }
+  .team-cta { padding: 4rem 1.25rem 4.5rem; }
 }

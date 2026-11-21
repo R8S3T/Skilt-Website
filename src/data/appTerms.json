@@ -211,8 +211,8 @@
   "campus-team": {
     "slug": "campus-team",
     "title": "Skilt Campus Team",
-    "version": "2026-09-19.1",
-    "date": "19.09.2026",
+    "version": "2026-11-21.1",
+    "date": "21.11.2026",
     "sections": [
       {
         "title": "Anbieter und Geltungsbereich",
@@ -239,17 +239,20 @@
       {
         "title": "Kauf, Preis und Vertragsschluss",
         "paragraphs": [
-          "Der Preis je Azubi-Lizenzplatz beträgt bei monatlicher Zahlung 7,99 € netto pro Monat, bei jährlicher Vorauszahlung 79,90 € netto pro Vertragsjahr, jeweils zuzüglich gesetzlicher Umsatzsteuer. Die Jahresvorauszahlung entspricht zehn Monatsbeiträgen.",
-          "Preis je Lizenzplatz, Anzahl, Umsatzsteuer und gewählter Zahlungsrhythmus werden vor der Bestellung vollständig angezeigt. Durch die zahlungspflichtige Bestellung gibt die Organisation ein Angebot ab; Skilt nimmt es durch ausdrückliche Bestätigung oder Freischaltung nach bestätigter Zahlung an. Vertragsunterlagen werden bereitgestellt.",
+          "Der Preis je Azubi-Lizenzplatz beträgt 6,99 € netto pro Monat zuzüglich gesetzlicher Umsatzsteuer. Abgerechnet wird jährlich im Voraus; je Lizenzplatz und Vertragsjahr sind das 83,88 € netto.",
+          "Preis je Lizenzplatz, Anzahl und Umsatzsteuer werden vor der Bestellung vollständig angezeigt. Durch die zahlungspflichtige Bestellung gibt die Organisation ein Angebot ab; Skilt nimmt es durch ausdrückliche Bestätigung oder Freischaltung nach bestätigter Zahlung an. Vertragsunterlagen werden bereitgestellt.",
           "Vor der beauftragten Verarbeitung von Ausbildungsdaten wird der AVV abgeschlossen. Organisationseinrichtung und AVV starten allein noch keine kostenpflichtige Laufzeit. Diese beginnt mit der bestätigten Zahlung."
         ]
       },
       {
         "title": "Laufzeit, Zahlung und Kündigung",
         "paragraphs": [
-          "Die kostenpflichtige Vertragslaufzeit beträgt zwölf Monate. Bezahlt wird nach dem gewählten Angebot monatlich oder durch jährliche Vorauszahlung. Monatliche Zahlung bedeutet keine monatliche Kündbarkeit.",
-          "Der Vertrag kann mit einer Frist von einem Monat zum Ende der jeweiligen Vertragslaufzeit gekündigt werden. Ohne fristgerechte Kündigung verlängert er sich um weitere zwölf Monate. Die Kündigung kann im Vertragsbereich oder in Textform an info@skilt.app erklärt werden. Eine Bestätigung benennt das Vertragsende. Gesetzliche Rechte zur außerordentlichen Beendigung bleiben unberührt.",
-          "Zusätzliche Plätze werden bis zum gemeinsamen Vertrags- beziehungsweise Abrechnungstermin anteilig berechnet. Eine Reduzierung wird erst zum Ende der Vertragslaufzeit wirksam; die Organisation bestimmt die auslaufenden Zuordnungen. Ein Wechsel des Zahlungsrhythmus wird nach verbindlicher Abrechnung erst für die nächste Vertragsperiode wirksam."
+          "Die kostenpflichtige Vertragslaufzeit beträgt zwölf Monate. Bezahlt wird durch jährliche Vorauszahlung zu Beginn jeder Vertragsperiode.",
+          "Der Vertrag kann mit einer Frist von 14 Tagen zum Ende der jeweiligen Vertragslaufzeit gekündigt werden. Ohne fristgerechte Kündigung verlängert er sich um weitere zwölf Monate. Die Kündigung kann im Vertragsbereich oder in Textform an info@skilt.app erklärt werden. Eine Bestätigung benennt das Vertragsende. Gesetzliche Rechte zur außerordentlichen Beendigung bleiben unberührt.",
+          "Zusätzliche Plätze können jederzeit während der Laufzeit gebucht werden. Sie werden für jeden angefangenen Monat bis zum Ende der laufenden Vertragslaufzeit anteilig mit dem für diese Laufzeit geltenden Preis je Platz und Monat (derzeit 6,99 € netto) berechnet und sofort in Rechnung gestellt. Alle Plätze haben dasselbe Laufzeitende und verlängern sich gemeinsam mit dem Vertrag.",
+          "Eine Verringerung der Platzanzahl ist nur zum Ende der Vertragslaufzeit möglich und muss unter Einhaltung der Kündigungsfrist nach Absatz 2 erklärt werden; die Organisation bestimmt die auslaufenden Zuordnungen. Für bereits bezahlte Plätze erfolgt keine anteilige Erstattung.",
+          "Scheidet ein Azubi aus, kann die Organisation seinen Platz während der Laufzeit einem anderen Azubi zuordnen; Abschnitt 2 gilt entsprechend.",
+          "Skilt kann den Preis je Lizenzplatz nur mit Wirkung zur nächsten Verlängerung ändern. Eine Preiserhöhung wird mindestens zwei Monate vor dem Ende der laufenden Vertragslaufzeit in Textform angekündigt; die Ankündigung nennt den neuen Preis und weist auf das Kündigungsrecht nach Absatz 2 hin. Während der laufenden Vertragslaufzeit bleibt der vereinbarte Preis unverändert. Kündigt die Organisation nicht fristgerecht, gilt der neue Preis ab der Verlängerung."
         ]
       },
       {
@@ -285,7 +288,7 @@
         "title": "Datenschutz und Vertragsänderungen",
         "paragraphs": [
           "Die Verarbeitung personenbezogener Daten wird in den zum Angebot gehörenden Datenschutzhinweisen erläutert. Die Annahme dieser Bedingungen ist keine Einwilligung in zusätzliche Datenverarbeitungen.",
-          "Für den Vertrag gilt die bei Abschluss vereinbarte Fassung. Änderungen bestehender Verträge erfolgen durch Vereinbarung oder auf gesetzlicher Grundlage. Schweigen auf eine Änderungsmitteilung gilt nicht allein als Zustimmung. Individuelle Vereinbarungen haben Vorrang."
+          "Für den Vertrag gilt die bei Abschluss vereinbarte Fassung. Änderungen bestehender Verträge erfolgen durch Vereinbarung oder auf gesetzlicher Grundlage. Schweigen auf eine Änderungsmitteilung gilt nicht allein als Zustimmung; die Regelung zu Preisänderungen zur Verlängerung in Abschnitt 5 bleibt unberührt. Individuelle Vereinbarungen haben Vorrang."
         ]
       },
       {

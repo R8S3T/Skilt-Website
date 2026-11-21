@@ -4,12 +4,17 @@ import Header from "../components/Header";
 import { TEAM_CTA } from "../data/campusLinks";
 import "../styles/Ausbildungsbetriebe.css";
 
-// Sobald Bilder aus dem Ausbilder-Zugang da sind: Datei nach public/images legen
-// und bei "image" den Pfad eintragen, z. B. "/images/campus-team-lizenzen.webp".
+// Darstellung der drei Funktionen:
+//   false = drei Karten nebeneinander mit großem Symbol (aktuell)
+//   true  = großer Aufbau mit Screenshot, abwechselnd Bild links/rechts
+// Zum Zurückwechseln: Screenshots nach public/images legen, unten bei "image"
+// den Pfad eintragen (z. B. "/images/campus-team-lizenzen.webp") und hier true setzen.
+const SHOW_SCREENSHOTS = false;
+
 const blocks = [
   {
     title: "Lizenzen verteilen",
-    text: "Du kaufst Lizenzen für deinen Betrieb und lädst deine Azubis per E-Mail ein.",
+    text: "Du holst dir Lizenzen für deinen Betrieb und lädst deine Azubis per E-Mail ein.",
     icon: FaEnvelopeOpenText,
     image: null,
   },
@@ -27,22 +32,51 @@ const blocks = [
   },
 ];
 
-const steps = [
-  "Lizenzen für deinen Betrieb holen",
-  "Azubis per E-Mail einladen",
-  "Azubis lernen in der App, du siehst die Fortschritte",
-];
-
-function BlockVisual({ title, icon: Icon, image }) {
-  if (image) {
-    return <img src={image} alt={`Skilt Campus Ausbilder-Zugang: ${title}`} loading="lazy" />;
-  }
+function CardIcon({ icon: Icon }) {
   return (
-    <div className="team-block__placeholder" aria-hidden="true">
+    <span className="team-card__icon" aria-hidden="true">
       <Icon />
-      <span>Bild folgt</span>
-    </div>
+    </span>
   );
+}
+
+// Aktuelle Darstellung: drei Karten nebeneinander, auf dem Handy untereinander.
+function FeatureCards() {
+  return (
+    <ul className="team-cards">
+      {blocks.map((block) => (
+        <li className="team-card" key={block.title}>
+          <CardIcon icon={block.icon} />
+          <h2>{block.title}</h2>
+          <p>{block.text}</p>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+// Spätere Darstellung mit Screenshots (SHOW_SCREENSHOTS = true).
+// Fehlt bei einem Block noch das Bild, wird stattdessen das Symbol gezeigt.
+function FeatureScreenshots() {
+  return blocks.map((block) => (
+    <article className="team-block" key={block.title}>
+      <div className="team-block__visual">
+        {block.image ? (
+          <img
+            src={block.image}
+            alt={`Skilt Campus Ausbilder-Zugang: ${block.title}`}
+            loading="lazy"
+          />
+        ) : (
+          <CardIcon icon={block.icon} />
+        )}
+      </div>
+      <div className="team-block__text">
+        <h2>{block.title}</h2>
+        <p>{block.text}</p>
+      </div>
+    </article>
+  ));
 }
 
 const Ausbildungsbetriebe = () => {
@@ -66,36 +100,12 @@ const Ausbildungsbetriebe = () => {
         </section>
 
         <section className="team-blocks team-inner" aria-label="Funktionen für Ausbildende">
-          {blocks.map((block) => (
-            <article className="team-block" key={block.title}>
-              <div className="team-block__visual">
-                <BlockVisual {...block} />
-              </div>
-              <div className="team-block__text">
-                <h2>{block.title}</h2>
-                <p>{block.text}</p>
-              </div>
-            </article>
-          ))}
+          {SHOW_SCREENSHOTS ? <FeatureScreenshots /> : <FeatureCards />}
 
           <p className="team-note">
             Deine Azubis lernen mit allen Inhalten und Funktionen von Skilt Campus: Fachtheorie,
             Formeln, Prüfungsfragen, Quizze und Duelle.
           </p>
-        </section>
-
-        <section className="team-steps" aria-labelledby="team-steps-title">
-          <div className="team-inner">
-            <h2 id="team-steps-title">So funktioniert's</h2>
-            <ol className="team-steps__list">
-              {steps.map((step, index) => (
-                <li key={step}>
-                  <span className="team-steps__number" aria-hidden="true">{index + 1}</span>
-                  <p>{step}</p>
-                </li>
-              ))}
-            </ol>
-          </div>
         </section>
 
         <section className="team-cta" aria-labelledby="team-cta-title">

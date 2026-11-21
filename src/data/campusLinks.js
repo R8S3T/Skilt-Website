@@ -4,8 +4,8 @@
 
 // Store-Links für die Skilt Campus App.
 // Solange hier "" steht, wird der Store-Button ausgegraut mit "demnächst" angezeigt.
-export const CAMPUS_APP_STORE_URL = "";
-export const CAMPUS_GOOGLE_PLAY_URL = "";
+export const CAMPUS_APP_STORE_URL = "https://apps.apple.com/de/app/skilt-campus/id6814094253";
+export const CAMPUS_GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.skilt.campus";
 
 // Button im Abschluss-Bereich der Seite für Ausbildungsbetriebe.
 // Später für Stripe einfach label und href ersetzen, z. B.:
